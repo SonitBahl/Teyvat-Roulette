@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  teyvat-roulette:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    container_name: teyvat-roulette
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+
