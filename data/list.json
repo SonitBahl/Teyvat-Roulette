@@ -767,7 +767,7 @@
     "version_released": "5.5"
   },
   {
-    "name": "Iansane",
+    "name": "Iansan",
     "element": "Electro",
     "rarity": 4,
     "nation": "Natlan",
@@ -787,7 +787,7 @@
     "element": "Cryo",
     "rarity": 5,
     "nation": "Fontaine",
-    "weapon_type": "Catalyst",
+    "weapon_type": "Polearm",
     "version_released": "5.6"
   },
   {
@@ -801,7 +801,7 @@
   {
     "name": "Skirk",
     "element": "Cryo",
-    "rarity": 4,
+    "rarity": 5,
     "nation": "Abyss",
     "weapon_type": "Sword",
     "version_released": "5.7"
