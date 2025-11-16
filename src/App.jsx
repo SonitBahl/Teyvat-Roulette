@@ -82,6 +82,21 @@ function App() {
     setShowPopup(false)
   }
 
+  const toggleFilters = () => {
+    setShowFilters(!showFilters)
+    // Prevent body scroll when filters are open on mobile
+    if (!showFilters) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+  }
+
+  const closeFilters = () => {
+    setShowFilters(false)
+    document.body.style.overflow = ''
+  }
+
   const activeFiltersCount = Object.values(filters).reduce((sum, arr) => sum + arr.length, 0)
 
   return (
@@ -91,7 +106,7 @@ function App() {
         <p>Spin the wheel to randomly select a character!</p>
         <button 
           className="toggle-filters-btn"
-          onClick={() => setShowFilters(!showFilters)}
+          onClick={toggleFilters}
         >
           {showFilters ? '▼ Hide Filters' : '▶ Show Filters'}
           {activeFiltersCount > 0 && <span className="filter-badge">{activeFiltersCount}</span>}
@@ -100,15 +115,22 @@ function App() {
 
       <div className="main-content">
         {showFilters && (
-          <div className="filters-panel">
-            <div className="filters-header">
-              <h2>Filters</h2>
-              {activeFiltersCount > 0 && (
-                <button className="clear-filters-btn" onClick={clearFilters}>
-                  Clear All ({activeFiltersCount})
-                </button>
-              )}
-            </div>
+          <>
+            <div className="filters-overlay" onClick={closeFilters}></div>
+            <div className="filters-panel">
+              <div className="filters-header">
+                <h2>Filters</h2>
+                <div className="filters-header-actions">
+                  {activeFiltersCount > 0 && (
+                    <button className="clear-filters-btn" onClick={clearFilters}>
+                      Clear All ({activeFiltersCount})
+                    </button>
+                  )}
+                  <button className="close-filters-btn" onClick={closeFilters}>
+                    ×
+                  </button>
+                </div>
+              </div>
 
             <div className="filter-group">
               <label>Weapon Type</label>
@@ -174,6 +196,7 @@ function App() {
               <strong>{filteredCharacters.length}</strong> character{filteredCharacters.length !== 1 ? 's' : ''} available
             </div>
           </div>
+          </>
         )}
 
         <div className="wheel-container">
@@ -265,7 +288,7 @@ function Wheel({ characters, isSpinning, rotation, selectedCharacter }) {
                 textAnchor="middle"
                 dominantBaseline="middle"
                 fill="#fff"
-                fontSize="18"
+                fontSize={characters.length > 30 ? "14" : characters.length > 20 ? "16" : "18"}
                 fontWeight="bold"
                 className="character-name"
               >

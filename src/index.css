@@ -36,3 +36,15 @@ button {
   width: 100%;
   min-height: 100vh;
 }
+
+/* Prevent text selection on buttons for better mobile experience */
+button {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+
+/* Improve touch scrolling */
+* {
+  -webkit-overflow-scrolling: touch;
+}
