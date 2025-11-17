@@ -1,7 +1,250 @@
-.app {
+.app-shell {
   min-height: 100vh;
   padding: 2rem;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.site-hero {
+  text-align: center;
+  color: white;
+}
+
+.site-hero h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.site-hero p {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.site-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.25rem;
+}
+
+.nav-link {
+  padding: 0.75rem 1.75rem;
+  border-radius: 999px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.nav-link:hover {
+  border-color: white;
+  transform: translateY(-2px);
+}
+
+.nav-link.active {
+  background: white;
+  color: #5a4bff;
+  border-color: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.page-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.roulette-page {
+  width: 100%;
+  min-height: 100%;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.15));
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.bosses-page {
+  width: 100%;
+  padding: 2rem;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  color: white;
+}
+
+.bosses-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.bosses-header p {
+  margin-top: 0.75rem;
+  font-size: 1.1rem;
+  max-width: 750px;
+  opacity: 0.9;
+}
+
+.bosses-controls {
+  margin-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+.bosses-tools {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.bosses-controls {
+  flex: 1;
+  min-width: 260px;
+}
+
+.select-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.select-group label {
+  font-weight: 600;
+}
+
+.select-group select {
+  min-width: 200px;
+  border-radius: 999px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  backdrop-filter: blur(6px);
+}
+
+.select-group select option {
+  color: #333;
+}
+
+.bosses-clear {
+  border: none;
+  border-radius: 999px;
+  padding: 0.75rem 1.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.bosses-clear:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.bosses-clear:not(:disabled):hover {
+  background: rgba(255, 255, 255, 0.35);
+  transform: translateY(-2px);
+}
+
+.bosses-count {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.bosses-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.bosses-wheel {
+  flex: 1;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.bosses-wheel .wheel-wrapper {
+  width: min(420px, 100%);
+  height: min(420px, 100%);
+}
+
+.bosses-selection {
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.25);
+  padding: 1rem 1.5rem;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 360px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.bosses-selection p {
+  margin: 0;
+  opacity: 0.8;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.bosses-selection h3 {
+  margin: 0.35rem 0;
+  font-size: 1.5rem;
+}
+
+.bosses-selection-meta {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  font-weight: 600;
+  opacity: 0.85;
+}
+
+.boss-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 18px;
+  padding: 1.25rem;
+  color: #333;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.boss-card h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.boss-badges {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.boss-region {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.boss-type {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
 }
 
 .header {
@@ -471,6 +714,10 @@
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+  .app-shell {
+    padding: 1.5rem;
+  }
+
   .main-content {
     flex-direction: column;
     gap: 1.5rem;
@@ -486,10 +733,44 @@
     width: 500px;
     height: 500px;
   }
+
+  .bosses-page {
+    padding: 1.5rem;
+  }
+
+  .bosses-tools {
+    flex-direction: column;
+  }
+
+  .bosses-wheel .wheel-wrapper {
+    width: min(85vw, 500px);
+    height: min(85vw, 500px);
+  }
+
+  .bosses-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .select-group select {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
-  .app {
+  .app-shell {
+    padding: 1rem;
+  }
+
+  .site-hero h1 {
+    font-size: 2rem;
+  }
+
+  .site-nav {
+    flex-direction: column;
+  }
+
+  .roulette-page {
     padding: 1rem;
     min-height: 100vh;
   }
@@ -620,6 +901,22 @@
     max-width: 300px;
   }
 
+  .bosses-page {
+    padding: 1.25rem;
+  }
+
+  .select-group select {
+    min-width: 0;
+  }
+
+  .bosses-wheel {
+    width: 100%;
+  }
+
+  .bosses-selection {
+    max-width: 100%;
+  }
+
   .popup-content {
     padding: 1.5rem;
     width: 95%;
@@ -660,7 +957,19 @@
 }
 
 @media (max-width: 480px) {
-  .app {
+  .app-shell {
+    padding: 0.75rem;
+  }
+
+  .site-hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .site-nav {
+    width: 100%;
+  }
+
+  .roulette-page {
     padding: 0.75rem;
   }
 
@@ -689,6 +998,10 @@
     font-size: 0.95rem;
   }
 
+  .bosses-page {
+    padding: 1rem;
+  }
+
   .popup-content {
     padding: 1.25rem;
   }
@@ -709,7 +1022,7 @@
 
 /* Landscape orientation for mobile */
 @media (max-width: 768px) and (orientation: landscape) {
-  .app {
+  .roulette-page {
     padding: 0.75rem;
   }
 
