@@ -470,7 +470,7 @@
     "name": "Wanderer",
     "element": "Anemo",
     "rarity": 5,
-    "nation": "Inazuma",
+    "nation": "Sumeru",
     "weapon_type": "Catalyst",
     "version_released": "3.3"
   },
@@ -639,7 +639,7 @@
     "name": "Chiori",
     "element": "Geo",
     "rarity": 5,
-    "nation": "Inazuma",
+    "nation": "Fontaine",
     "weapon_type": "Sword",
     "version_released": "4.5"
   },
