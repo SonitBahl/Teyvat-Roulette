@@ -5,7 +5,8 @@
     "rarity": 5,
     "nation": "Mondstadt",
     "weapon_type": "Claymore",
-    "version_released": "1.0"
+    "version_released": "1.0",
+    "class": ["maindps"]
   },
   {
     "name": "Jean",
@@ -13,7 +14,8 @@
     "rarity": 5,
     "nation": "Mondstadt",
     "weapon_type": "Sword",
-    "version_released": "1.0"
+    "version_released": "1.0",
+    "class": ["support", "healer"]
   },
   {
     "name": "Keqing",
@@ -21,7 +23,8 @@
     "rarity": 5,
     "nation": "Liyue",
     "weapon_type": "Sword",
-    "version_released": "1.0"
+    "version_released": "1.0",
+    "class": ["maindps"]
   },
   {
     "name": "Mona",
@@ -29,7 +32,8 @@
     "rarity": 5,
     "nation": "Mondstadt",
     "weapon_type": "Catalyst",
-    "version_released": "1.0"
+    "version_released": "1.0",
+    "class": ["subdps", "support"]
   },
   {
     "name": "Qiqi",
@@ -37,7 +41,8 @@
     "rarity": 5,
     "nation": "Liyue",
     "weapon_type": "Sword",
-    "version_released": "1.0"
+    "version_released": "1.0",
+    "class": ["healer"]
   },
   {
     "name": "Venti",
@@ -45,7 +50,8 @@
     "rarity": 5,
     "nation": "Mondstadt",
     "weapon_type": "Bow",
-    "version_released": "1.0"
+    "version_released": "1.0",
+    "class": ["maindps", "subdps", "support"]
   },
 
   {
@@ -54,7 +60,8 @@
     "rarity": 4,
     "nation": "Mondstadt",
     "weapon_type": "Bow",
-    "version_released": "1.0"
+    "version_released": "1.0",
+    "class": ["maindps", "subdps"]
   },
   {
     "name": "Barbara",
@@ -62,7 +69,8 @@
     "rarity": 4,
     "nation": "Mondstadt",
     "weapon_type": "Catalyst",
-    "version_released": "1.0"
+    "version_released": "1.0",
+    "class": ["healer"]
   },
   {
     "name": "Beidou",
@@ -70,7 +78,8 @@
     "rarity": 4,
     "nation": "Liyue",
     "weapon_type": "Claymore",
-    "version_released": "1.0"
+    "version_released": "1.0",
+    "class": ["subdps", "shield"]
   },
   {
     "name": "Bennett",
@@ -78,7 +87,8 @@
     "rarity": 4,
     "nation": "Mondstadt",
     "weapon_type": "Sword",
-    "version_released": "1.0"
+    "version_released": "1.0",
+    "class": ["subdps", "healer", "support"]
   },
   {
     "name": "Chongyun",
@@ -86,7 +96,8 @@
     "rarity": 4,
     "nation": "Liyue",
     "weapon_type": "Claymore",
-    "version_released": "1.0"
+    "version_released": "1.0",
+    "class": ["maindps"]
   },
   {
     "name": "Fischl",
@@ -94,7 +105,8 @@
     "rarity": 4,
     "nation": "Mondstadt",
     "weapon_type": "Bow",
-    "version_released": "1.0"
+    "version_released": "1.0",
+    "class": ["subdps"]
   },
   {
     "name": "Kaeya",
@@ -102,7 +114,8 @@
     "rarity": 4,
     "nation": "Mondstadt",
     "weapon_type": "Sword",
-    "version_released": "1.0"
+    "version_released": "1.0",
+    "class": ["subdps"]
   },
   {
     "name": "Lisa",
@@ -110,7 +123,8 @@
     "rarity": 4,
     "nation": "Mondstadt",
     "weapon_type": "Catalyst",
-    "version_released": "1.0"
+    "version_released": "1.0",
+    "class": ["support"]
   },
   {
     "name": "Ningguang",
@@ -118,7 +132,8 @@
     "rarity": 4,
     "nation": "Liyue",
     "weapon_type": "Catalyst",
-    "version_released": "1.0"
+    "version_released": "1.0",
+    "class": ["maindps"]
   },
   {
     "name": "Noelle",
@@ -126,7 +141,8 @@
     "rarity": 4,
     "nation": "Mondstadt",
     "weapon_type": "Claymore",
-    "version_released": "1.0"
+    "version_released": "1.0",
+    "class": ["maindps", "shield", "healer"]
   },
   {
     "name": "Razor",
@@ -134,7 +150,8 @@
     "rarity": 4,
     "nation": "Mondstadt",
     "weapon_type": "Claymore",
-    "version_released": "1.0"
+    "version_released": "1.0",
+    "class": ["maindps"]
   },
   {
     "name": "Sucrose",
@@ -142,7 +159,8 @@
     "rarity": 4,
     "nation": "Mondstadt",
     "weapon_type": "Catalyst",
-    "version_released": "1.0"
+    "version_released": "1.0",
+    "class": ["support"]
   },
   {
     "name": "Xiangling",
@@ -150,7 +168,8 @@
     "rarity": 4,
     "nation": "Liyue",
     "weapon_type": "Polearm",
-    "version_released": "1.0"
+    "version_released": "1.0",
+    "class": ["subdps"]
   },
   {
     "name": "Xingqiu",
@@ -158,7 +177,8 @@
     "rarity": 4,
     "nation": "Liyue",
     "weapon_type": "Sword",
-    "version_released": "1.0"
+    "version_released": "1.0",
+    "class": ["subdps", "healer"]
   },
 
   {
@@ -167,7 +187,8 @@
     "rarity": 5,
     "nation": "Snezhnaya",
     "weapon_type": "Bow",
-    "version_released": "1.1"
+    "version_released": "1.1",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Zhongli",
@@ -175,7 +196,8 @@
     "rarity": 5,
     "nation": "Liyue",
     "weapon_type": "Polearm",
-    "version_released": "1.1"
+    "version_released": "1.1",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Diona",
@@ -183,7 +205,8 @@
     "rarity": 4,
     "nation": "Mondstadt",
     "weapon_type": "Bow",
-    "version_released": "1.1"
+    "version_released": "1.1",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Xinyan",
@@ -191,7 +214,8 @@
     "rarity": 4,
     "nation": "Liyue",
     "weapon_type": "Claymore",
-    "version_released": "1.1"
+    "version_released": "1.1",
+    "class": ["subdps", "healer"]
   },
 
   {
@@ -200,7 +224,8 @@
     "rarity": 5,
     "nation": "Mondstadt",
     "weapon_type": "Sword",
-    "version_released": "1.2"
+    "version_released": "1.2",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Ganyu",
@@ -208,7 +233,8 @@
     "rarity": 5,
     "nation": "Liyue",
     "weapon_type": "Bow",
-    "version_released": "1.2"
+    "version_released": "1.2",
+    "class": ["subdps", "healer"]
   },
 
   {
@@ -217,7 +243,8 @@
     "rarity": 5,
     "nation": "Liyue",
     "weapon_type": "Polearm",
-    "version_released": "1.3"
+    "version_released": "1.3",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Hu Tao",
@@ -225,7 +252,8 @@
     "rarity": 5,
     "nation": "Liyue",
     "weapon_type": "Polearm",
-    "version_released": "1.3"
+    "version_released": "1.3",
+    "class": ["subdps", "healer"]
   },
 
   {
@@ -234,7 +262,8 @@
     "rarity": 4,
     "nation": "Mondstadt",
     "weapon_type": "Polearm",
-    "version_released": "1.4"
+    "version_released": "1.4",
+    "class": ["subdps", "healer"]
   },
 
   {
@@ -243,7 +272,8 @@
     "rarity": 5,
     "nation": "Mondstadt",
     "weapon_type": "Claymore",
-    "version_released": "1.5"
+    "version_released": "1.5",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Yanfei",
@@ -251,7 +281,8 @@
     "rarity": 4,
     "nation": "Liyue",
     "weapon_type": "Catalyst",
-    "version_released": "1.5"
+    "version_released": "1.5",
+    "class": ["subdps", "healer"]
   },
 
   {
@@ -260,7 +291,8 @@
     "rarity": 5,
     "nation": "Inazuma",
     "weapon_type": "Sword",
-    "version_released": "1.6"
+    "version_released": "1.6",
+    "class": ["subdps", "healer"]
   },
 
   {
@@ -269,7 +301,8 @@
     "rarity": 5,
     "nation": "Inazuma",
     "weapon_type": "Sword",
-    "version_released": "2.0"
+    "version_released": "2.0",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Yoimiya",
@@ -277,7 +310,8 @@
     "rarity": 5,
     "nation": "Inazuma",
     "weapon_type": "Bow",
-    "version_released": "2.0"
+    "version_released": "2.0",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Sayu",
@@ -285,7 +319,8 @@
     "rarity": 4,
     "nation": "Inazuma",
     "weapon_type": "Claymore",
-    "version_released": "2.0"
+    "version_released": "2.0",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Raiden Shogun",
@@ -293,7 +328,8 @@
     "rarity": 5,
     "nation": "Inazuma",
     "weapon_type": "Polearm",
-    "version_released": "2.1"
+    "version_released": "2.1",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Kujou Sara",
@@ -301,7 +337,8 @@
     "rarity": 4,
     "nation": "Inazuma",
     "weapon_type": "Bow",
-    "version_released": "2.1"
+    "version_released": "2.1",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Sangonomiya Kokomi",
@@ -309,7 +346,8 @@
     "rarity": 5,
     "nation": "Inazuma",
     "weapon_type": "Catalyst",
-    "version_released": "2.1"
+    "version_released": "2.1",
+    "class": ["subdps", "healer"]
   },
 
   {
@@ -318,7 +356,8 @@
     "rarity": 4,
     "nation": "Inazuma",
     "weapon_type": "Polearm",
-    "version_released": "2.2"
+    "version_released": "2.2",
+    "class": ["subdps", "healer"]
   },
 
   {
@@ -327,7 +366,8 @@
     "rarity": 5,
     "nation": "Inazuma",
     "weapon_type": "Claymore",
-    "version_released": "2.3"
+    "version_released": "2.3",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Gorou",
@@ -335,7 +375,8 @@
     "rarity": 4,
     "nation": "Inazuma",
     "weapon_type": "Bow",
-    "version_released": "2.3"
+    "version_released": "2.3",
+    "class": ["subdps", "healer"]
   },
 
   {
@@ -344,7 +385,8 @@
     "rarity": 5,
     "nation": "Liyue",
     "weapon_type": "Polearm",
-    "version_released": "2.4"
+    "version_released": "2.4",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Yun Jin",
@@ -352,7 +394,8 @@
     "rarity": 4,
     "nation": "Liyue",
     "weapon_type": "Polearm",
-    "version_released": "2.4"
+    "version_released": "2.4",
+    "class": ["subdps", "healer"]
   },
 
   {
@@ -361,7 +404,8 @@
     "rarity": 5,
     "nation": "Inazuma",
     "weapon_type": "Catalyst",
-    "version_released": "2.5"
+    "version_released": "2.5",
+    "class": ["subdps", "healer"]
   },
 
   {
@@ -370,7 +414,8 @@
     "rarity": 5,
     "nation": "Inazuma",
     "weapon_type": "Sword",
-    "version_released": "2.6"
+    "version_released": "2.6",
+    "class": ["subdps", "healer"]
   },
 
   {
@@ -379,7 +424,8 @@
     "rarity": 5,
     "nation": "Liyue",
     "weapon_type": "Bow",
-    "version_released": "2.7"
+    "version_released": "2.7",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Kuki Shinobu",
@@ -387,7 +433,8 @@
     "rarity": 4,
     "nation": "Inazuma",
     "weapon_type": "Sword",
-    "version_released": "2.7"
+    "version_released": "2.7",
+    "class": ["subdps", "healer"]
   },
 
   {
@@ -396,7 +443,8 @@
     "rarity": 4,
     "nation": "Inazuma",
     "weapon_type": "Catalyst",
-    "version_released": "2.8"
+    "version_released": "2.8",
+    "class": ["subdps", "healer"]
   },
 
   {
@@ -405,7 +453,8 @@
     "rarity": 5,
     "nation": "Sumeru",
     "weapon_type": "Bow",
-    "version_released": "3.0"
+    "version_released": "3.0",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Collei",
@@ -413,7 +462,8 @@
     "rarity": 4,
     "nation": "Sumeru",
     "weapon_type": "Bow",
-    "version_released": "3.0"
+    "version_released": "3.0",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Dori",
@@ -421,7 +471,8 @@
     "rarity": 4,
     "nation": "Sumeru",
     "weapon_type": "Claymore",
-    "version_released": "3.0"
+    "version_released": "3.0",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Cyno",
@@ -429,7 +480,8 @@
     "rarity": 5,
     "nation": "Sumeru",
     "weapon_type": "Polearm",
-    "version_released": "3.1"
+    "version_released": "3.1",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Nilou",
@@ -437,7 +489,8 @@
     "rarity": 5,
     "nation": "Sumeru",
     "weapon_type": "Sword",
-    "version_released": "3.1"
+    "version_released": "3.1",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Candace",
@@ -445,7 +498,8 @@
     "rarity": 4,
     "nation": "Sumeru",
     "weapon_type": "Polearm",
-    "version_released": "3.1"
+    "version_released": "3.1",
+    "class": ["subdps", "healer"]
   },
 
   {
@@ -454,7 +508,8 @@
     "rarity": 5,
     "nation": "Sumeru",
     "weapon_type": "Catalyst",
-    "version_released": "3.2"
+    "version_released": "3.2",
+    "class": ["subdps", "healer"]
   },
 
   {
@@ -463,7 +518,8 @@
     "rarity": 4,
     "nation": "Sumeru",
     "weapon_type": "Sword",
-    "version_released": "3.2"
+    "version_released": "3.2",
+    "class": ["subdps", "healer"]
   },
 
   {
@@ -472,7 +528,8 @@
     "rarity": 5,
     "nation": "Sumeru",
     "weapon_type": "Catalyst",
-    "version_released": "3.3"
+    "version_released": "3.3",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Faruzan",
@@ -480,7 +537,8 @@
     "rarity": 4,
     "nation": "Sumeru",
     "weapon_type": "Bow",
-    "version_released": "3.3"
+    "version_released": "3.3",
+    "class": ["subdps", "healer"]
   },
 
   {
@@ -489,7 +547,8 @@
     "rarity": 5,
     "nation": "Sumeru",
     "weapon_type": "Sword",
-    "version_released": "3.4"
+    "version_released": "3.4",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Yaoyao",
@@ -497,7 +556,8 @@
     "rarity": 4,
     "nation": "Liyue",
     "weapon_type": "Polearm",
-    "version_released": "3.4"
+    "version_released": "3.4",
+    "class": ["subdps", "healer"]
   },
 
   {
@@ -506,7 +566,8 @@
     "rarity": 5,
     "nation": "Sumeru",
     "weapon_type": "Claymore",
-    "version_released": "3.5"
+    "version_released": "3.5",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Mika",
@@ -514,7 +575,8 @@
     "rarity": 4,
     "nation": "Mondstadt",
     "weapon_type": "Polearm",
-    "version_released": "3.5"
+    "version_released": "3.5",
+    "class": ["subdps", "healer"]
   },
 
   {
@@ -523,7 +585,8 @@
     "rarity": 5,
     "nation": "Liyue",
     "weapon_type": "Catalyst",
-    "version_released": "3.6"
+    "version_released": "3.6",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Kaveh",
@@ -531,7 +594,8 @@
     "rarity": 4,
     "nation": "Sumeru",
     "weapon_type": "Claymore",
-    "version_released": "3.6"
+    "version_released": "3.6",
+    "class": ["subdps", "healer"]
   },
 
   {
@@ -540,7 +604,8 @@
     "rarity": 4,
     "nation": "Inazuma",
     "weapon_type": "Sword",
-    "version_released": "3.7"
+    "version_released": "3.7",
+    "class": ["subdps", "healer"]
   },
 
   {
@@ -549,7 +614,8 @@
     "rarity": 5,
     "nation": "Fontaine",
     "weapon_type": "Bow",
-    "version_released": "4.0"
+    "version_released": "4.0",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Lynette",
@@ -557,7 +623,8 @@
     "rarity": 4,
     "nation": "Fontaine",
     "weapon_type": "Sword",
-    "version_released": "4.0"
+    "version_released": "4.0",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Freminet",
@@ -565,7 +632,8 @@
     "rarity": 4,
     "nation": "Fontaine",
     "weapon_type": "Claymore",
-    "version_released": "4.0"
+    "version_released": "4.0",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Neuvillette",
@@ -573,7 +641,8 @@
     "rarity": 5,
     "nation": "Fontaine",
     "weapon_type": "Catalyst",
-    "version_released": "4.1"
+    "version_released": "4.1",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Wriothesley",
@@ -581,7 +650,8 @@
     "rarity": 5,
     "nation": "Fontaine",
     "weapon_type": "Catalyst",
-    "version_released": "4.1"
+    "version_released": "4.1",
+    "class": ["subdps", "healer"]
   },
 
   {
@@ -590,7 +660,8 @@
     "rarity": 5,
     "nation": "Fontaine",
     "weapon_type": "Sword",
-    "version_released": "4.2"
+    "version_released": "4.2",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Charlotte",
@@ -598,7 +669,8 @@
     "rarity": 4,
     "nation": "Fontaine",
     "weapon_type": "Catalyst",
-    "version_released": "4.2"
+    "version_released": "4.2",
+    "class": ["subdps", "healer"]
   },
 
   {
@@ -607,7 +679,8 @@
     "rarity": 5,
     "nation": "Fontaine",
     "weapon_type": "Claymore",
-    "version_released": "4.3"
+    "version_released": "4.3",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Chevreuse",
@@ -615,7 +688,8 @@
     "rarity": 4,
     "nation": "Fontaine",
     "weapon_type": "Polearm",
-    "version_released": "4.3"
+    "version_released": "4.3",
+    "class": ["subdps", "healer"]
   },
 
   {
@@ -624,7 +698,8 @@
     "rarity": 5,
     "nation": "Liyue",
     "weapon_type": "Catalyst",
-    "version_released": "4.4"
+    "version_released": "4.4",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Gaming",
@@ -632,7 +707,8 @@
     "rarity": 4,
     "nation": "Liyue",
     "weapon_type": "Claymore",
-    "version_released": "4.4"
+    "version_released": "4.4",
+    "class": ["subdps", "healer"]
   },
 
   {
@@ -641,7 +717,8 @@
     "rarity": 5,
     "nation": "Fontaine",
     "weapon_type": "Sword",
-    "version_released": "4.5"
+    "version_released": "4.5",
+    "class": ["subdps", "healer"]
   },
 
   {
@@ -650,7 +727,8 @@
     "rarity": 5,
     "nation": "Snezhnaya",
     "weapon_type": "Polearm",
-    "version_released": "4.6"
+    "version_released": "4.6",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Sethos",
@@ -658,7 +736,8 @@
     "rarity": 4,
     "nation": "Sumeru",
     "weapon_type": "Bow",
-    "version_released": "4.6"
+    "version_released": "4.6",
+    "class": ["subdps", "healer"]
   },
 
   {
@@ -667,7 +746,8 @@
     "rarity": 5,
     "nation": "Fontaine",
     "weapon_type": "Sword",
-    "version_released": "4.7"
+    "version_released": "4.7",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Sigewinne",
@@ -675,7 +755,8 @@
     "rarity": 5,
     "nation": "Fontaine",
     "weapon_type": "Bow",
-    "version_released": "4.7"
+    "version_released": "4.7",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Emilie",
@@ -683,7 +764,8 @@
     "rarity": 5,
     "nation": "Fontaine",
     "weapon_type": "Polearm",
-    "version_released": "4.8"
+    "version_released": "4.8",
+    "class": ["subdps", "healer"]
   },
 
   {
@@ -692,7 +774,8 @@
     "rarity": 5,
     "nation": "Natlan",
     "weapon_type": "Catalyst",
-    "version_released": "5.0"
+    "version_released": "5.0",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Kachina",
@@ -700,7 +783,8 @@
     "rarity": 4,
     "nation": "Natlan",
     "weapon_type": "Claymore",
-    "version_released": "5.0"
+    "version_released": "5.0",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Kinich",
@@ -708,7 +792,8 @@
     "rarity": 5,
     "nation": "Natlan",
     "weapon_type": "Claymore",
-    "version_released": "5.0"
+    "version_released": "5.0",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Xilonen",
@@ -716,7 +801,8 @@
     "rarity": 5,
     "nation": "Natlan",
     "weapon_type": "Sword",
-    "version_released": "5.1"
+    "version_released": "5.1",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Chasca",
@@ -724,7 +810,8 @@
     "rarity": 5,
     "nation": "Natlan",
     "weapon_type": "Bow",
-    "version_released": "5.2"
+    "version_released": "5.2",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Ororon",
@@ -732,7 +819,8 @@
     "rarity": 4,
     "nation": "Natlan",
     "weapon_type": "Bow",
-    "version_released": "5.2"
+    "version_released": "5.2",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Citlali",
@@ -740,7 +828,8 @@
     "rarity": 5,
     "nation": "Natlan",
     "weapon_type": "Catalyst",
-    "version_released": "5.3"
+    "version_released": "5.3",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Mauvika",
@@ -748,7 +837,8 @@
     "rarity": 5,
     "nation": "Natlan",
     "weapon_type": "Claymore",
-    "version_released": "5.3"
+    "version_released": "5.3",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Yumemizuki Mizuki",
@@ -756,7 +846,8 @@
     "rarity": 5,
     "nation": "Inazuma",
     "weapon_type": "Catalyst",
-    "version_released": "5.4"
+    "version_released": "5.4",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Varesa",
@@ -764,7 +855,8 @@
     "rarity": 5,
     "nation": "Natlan",
     "weapon_type": "Catalyst",
-    "version_released": "5.5"
+    "version_released": "5.5",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Iansan",
@@ -772,7 +864,8 @@
     "rarity": 4,
     "nation": "Natlan",
     "weapon_type": "Polearm",
-    "version_released": "5.5"
+    "version_released": "5.5",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Ifa",
@@ -780,7 +873,8 @@
     "rarity": 4,
     "nation": "Natlan",
     "weapon_type": "Catalyst",
-    "version_released": "5.6"
+    "version_released": "5.6",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Escoffier",
@@ -788,7 +882,8 @@
     "rarity": 5,
     "nation": "Fontaine",
     "weapon_type": "Polearm",
-    "version_released": "5.6"
+    "version_released": "5.6",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Dahlia",
@@ -796,7 +891,8 @@
     "rarity": 4,
     "nation": "Mondstadt",
     "weapon_type": "Sword",
-    "version_released": "5.7"
+    "version_released": "5.7",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Skirk",
@@ -804,7 +900,8 @@
     "rarity": 5,
     "nation": "Abyss",
     "weapon_type": "Sword",
-    "version_released": "5.7"
+    "version_released": "5.7",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Ineffa",
@@ -812,7 +909,8 @@
     "rarity": 5,
     "nation": "Nodkrai",
     "weapon_type": "Polearm",
-    "version_released": "5.8"
+    "version_released": "5.8",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Lauma",
@@ -820,7 +918,8 @@
     "rarity": 5,
     "nation": "Nodkrai",
     "weapon_type": "Catalyst",
-    "version_released": "6.0"
+    "version_released": "6.0",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Aino",
@@ -828,7 +927,8 @@
     "rarity": 4,
     "nation": "Nodkrai",
     "weapon_type": "Claymore",
-    "version_released": "6.0"
+    "version_released": "6.0",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Flins",
@@ -836,7 +936,8 @@
     "rarity": 5,
     "nation": "Nodkrai",
     "weapon_type": "Polearm",
-    "version_released": "6.0"
+    "version_released": "6.0",
+    "class": ["subdps", "healer"]
   },
   {
     "name": "Nefer",
@@ -844,6 +945,7 @@
     "rarity": 5,
     "nation": "Nodkrai",
     "weapon_type": "Catalyst",
-    "version_released": "6.1"
+    "version_released": "6.1",
+    "class": ["subdps", "healer"]
   }
 ]
