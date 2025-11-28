@@ -51,7 +51,7 @@
     "nation": "Mondstadt",
     "weapon_type": "Bow",
     "version_released": "1.0",
-    "class": ["maindps", "subdps", "support"]
+    "class": ["maindps", "support"]
   },
 
   {
@@ -181,71 +181,71 @@
     "class": ["subdps", "healer"]
   },
 
-  {
+ {
     "name": "Tartaglia",
     "element": "Hydro",
     "rarity": 5,
     "nation": "Snezhnaya",
     "weapon_type": "Bow",
     "version_released": "1.1",
-    "class": ["subdps", "healer"]
-  },
-  {
+    "class": ["maindps"]
+},
+{
     "name": "Zhongli",
     "element": "Geo",
     "rarity": 5,
     "nation": "Liyue",
     "weapon_type": "Polearm",
     "version_released": "1.1",
-    "class": ["subdps", "healer"]
-  },
-  {
+    "class": ["shield", "support"]
+},
+{
     "name": "Diona",
     "element": "Cryo",
     "rarity": 4,
     "nation": "Mondstadt",
     "weapon_type": "Bow",
     "version_released": "1.1",
-    "class": ["subdps", "healer"]
-  },
-  {
+    "class": ["healer", "shield", "support"]
+},
+{
     "name": "Xinyan",
     "element": "Pyro",
     "rarity": 4,
     "nation": "Liyue",
     "weapon_type": "Claymore",
     "version_released": "1.1",
-    "class": ["subdps", "healer"]
-  },
+    "class": ["subdps", "shield"]
+},
 
-  {
+{
     "name": "Albedo",
     "element": "Geo",
     "rarity": 5,
     "nation": "Mondstadt",
     "weapon_type": "Sword",
     "version_released": "1.2",
-    "class": ["subdps", "healer"]
-  },
-  {
+    "class": ["subdps", "support"]
+},
+{
     "name": "Ganyu",
     "element": "Cryo",
     "rarity": 5,
     "nation": "Liyue",
     "weapon_type": "Bow",
     "version_released": "1.2",
-    "class": ["subdps", "healer"]
-  },
+    "class": ["maindps", "subdps"]
+},
 
-  {
+{
     "name": "Xiao",
     "element": "Anemo",
     "rarity": 5,
     "nation": "Liyue",
     "weapon_type": "Polearm",
     "version_released": "1.3",
-    "class": ["subdps", "healer"]
-  },
+    "class": ["maindps"]
+},
   {
     "name": "Hu Tao",
     "element": "Pyro",
@@ -253,75 +253,71 @@
     "nation": "Liyue",
     "weapon_type": "Polearm",
     "version_released": "1.3",
-    "class": ["subdps", "healer"]
-  },
-
-  {
+    "class": ["maindps"]
+},
+{
     "name": "Rosaria",
     "element": "Cryo",
     "rarity": 4,
     "nation": "Mondstadt",
     "weapon_type": "Polearm",
     "version_released": "1.4",
-    "class": ["subdps", "healer"]
-  },
-
-  {
+    "class": ["subdps", "support"]
+},
+{
     "name": "Eula",
     "element": "Cryo",
     "rarity": 5,
     "nation": "Mondstadt",
     "weapon_type": "Claymore",
     "version_released": "1.5",
-    "class": ["subdps", "healer"]
-  },
-  {
+    "class": ["maindps"]
+},
+{
     "name": "Yanfei",
     "element": "Pyro",
     "rarity": 4,
     "nation": "Liyue",
     "weapon_type": "Catalyst",
     "version_released": "1.5",
-    "class": ["subdps", "healer"]
-  },
-
-  {
+    "class": ["maindps", "shield"]
+},
+{
     "name": "Kazuha",
     "element": "Anemo",
     "rarity": 5,
     "nation": "Inazuma",
     "weapon_type": "Sword",
     "version_released": "1.6",
-    "class": ["subdps", "healer"]
-  },
-
-  {
+    "class": ["support", "subdps"]
+},
+{
     "name": "Kamisato Ayaka",
     "element": "Cryo",
     "rarity": 5,
     "nation": "Inazuma",
     "weapon_type": "Sword",
     "version_released": "2.0",
-    "class": ["subdps", "healer"]
-  },
-  {
+    "class": ["maindps"]
+},
+{
     "name": "Yoimiya",
     "element": "Pyro",
     "rarity": 5,
     "nation": "Inazuma",
     "weapon_type": "Bow",
     "version_released": "2.0",
-    "class": ["subdps", "healer"]
-  },
-  {
+    "class": ["maindps", "support"]
+},
+{
     "name": "Sayu",
     "element": "Anemo",
     "rarity": 4,
     "nation": "Inazuma",
     "weapon_type": "Claymore",
     "version_released": "2.0",
-    "class": ["subdps", "healer"]
-  },
+    "class": ["healer", "support"]
+},
   {
     "name": "Raiden Shogun",
     "element": "Electro",
@@ -329,84 +325,81 @@
     "nation": "Inazuma",
     "weapon_type": "Polearm",
     "version_released": "2.1",
-    "class": ["subdps", "healer"]
-  },
-  {
+    "class": ["maindps", "subdps", "support"]
+},
+{
     "name": "Kujou Sara",
     "element": "Electro",
     "rarity": 4,
     "nation": "Inazuma",
     "weapon_type": "Bow",
     "version_released": "2.1",
-    "class": ["subdps", "healer"]
-  },
-  {
+    "class": ["support", "subdps"]
+},
+{
     "name": "Sangonomiya Kokomi",
     "element": "Hydro",
     "rarity": 5,
     "nation": "Inazuma",
     "weapon_type": "Catalyst",
     "version_released": "2.1",
-    "class": ["subdps", "healer"]
-  },
-
-  {
+    "class": ["healer"]
+},
+{
     "name": "Thoma",
     "element": "Pyro",
     "rarity": 4,
     "nation": "Inazuma",
     "weapon_type": "Polearm",
     "version_released": "2.2",
-    "class": ["subdps", "healer"]
-  },
-
-  {
+    "class": ["shield", "support"]
+},
+{
     "name": "Arataki Itto",
     "element": "Geo",
     "rarity": 5,
     "nation": "Inazuma",
     "weapon_type": "Claymore",
     "version_released": "2.3",
-    "class": ["subdps", "healer"]
-  },
-  {
+    "class": ["maindps"]
+},
+{
     "name": "Gorou",
     "element": "Geo",
     "rarity": 4,
     "nation": "Inazuma",
     "weapon_type": "Bow",
     "version_released": "2.3",
-    "class": ["subdps", "healer"]
-  },
-
-  {
+    "class": ["support", "healer"]
+},
+{
     "name": "Shenhe",
     "element": "Cryo",
     "rarity": 5,
     "nation": "Liyue",
     "weapon_type": "Polearm",
     "version_released": "2.4",
-    "class": ["subdps", "healer"]
-  },
-  {
+    "class": ["support"]
+},
+{
     "name": "Yun Jin",
     "element": "Geo",
     "rarity": 4,
     "nation": "Liyue",
     "weapon_type": "Polearm",
     "version_released": "2.4",
-    "class": ["subdps", "healer"]
-  },
-
-  {
+    "class": ["support"]
+},
+{
     "name": "Yae Miko",
     "element": "Electro",
     "rarity": 5,
     "nation": "Inazuma",
     "weapon_type": "Catalyst",
     "version_released": "2.5",
-    "class": ["subdps", "healer"]
-  },
+    "class": ["subdps"]
+},
+
 
   {
     "name": "Kamisato Ayato",
@@ -415,358 +408,361 @@
     "nation": "Inazuma",
     "weapon_type": "Sword",
     "version_released": "2.6",
-    "class": ["subdps", "healer"]
-  },
-
-  {
+    "class": ["maindps", "support"]
+},
+{
     "name": "Yelan",
     "element": "Hydro",
     "rarity": 5,
     "nation": "Liyue",
     "weapon_type": "Bow",
     "version_released": "2.7",
-    "class": ["subdps", "healer"]
-  },
-  {
+    "class": ["subdps", "support"]
+},
+{
     "name": "Kuki Shinobu",
     "element": "Electro",
     "rarity": 4,
     "nation": "Inazuma",
     "weapon_type": "Sword",
     "version_released": "2.7",
-    "class": ["subdps", "healer"]
-  },
-
-  {
+    "class": ["healer", "support"]
+},
+{
     "name": "Shikanoin Heizou",
     "element": "Anemo",
     "rarity": 4,
     "nation": "Inazuma",
     "weapon_type": "Catalyst",
     "version_released": "2.8",
-    "class": ["subdps", "healer"]
-  },
-
-  {
+    "class": ["maindps"]
+},
+{
     "name": "Tighnari",
     "element": "Dendro",
     "rarity": 5,
     "nation": "Sumeru",
     "weapon_type": "Bow",
     "version_released": "3.0",
-    "class": ["subdps", "healer"]
-  },
-  {
+    "class": ["maindps"]
+},
+{
     "name": "Collei",
     "element": "Dendro",
     "rarity": 4,
     "nation": "Sumeru",
     "weapon_type": "Bow",
     "version_released": "3.0",
-    "class": ["subdps", "healer"]
-  },
-  {
+    "class": ["support"]
+},
+{
     "name": "Dori",
     "element": "Electro",
     "rarity": 4,
     "nation": "Sumeru",
     "weapon_type": "Claymore",
     "version_released": "3.0",
-    "class": ["subdps", "healer"]
-  },
-  {
+    "class": ["healer", "support"]
+},
+{
     "name": "Cyno",
     "element": "Electro",
     "rarity": 5,
     "nation": "Sumeru",
     "weapon_type": "Polearm",
     "version_released": "3.1",
-    "class": ["subdps", "healer"]
-  },
-  {
+    "class": ["maindps"]
+},
+ {
     "name": "Nilou",
     "element": "Hydro",
     "rarity": 5,
     "nation": "Sumeru",
     "weapon_type": "Sword",
     "version_released": "3.1",
-    "class": ["subdps", "healer"]
-  },
-  {
+    "class": ["support"]
+},
+{
     "name": "Candace",
     "element": "Hydro",
     "rarity": 4,
     "nation": "Sumeru",
     "weapon_type": "Polearm",
     "version_released": "3.1",
-    "class": ["subdps", "healer"]
-  },
-
-  {
+    "class": ["support"]
+},
+{
     "name": "Nahida",
     "element": "Dendro",
     "rarity": 5,
     "nation": "Sumeru",
     "weapon_type": "Catalyst",
     "version_released": "3.2",
-    "class": ["subdps", "healer"]
-  },
-
-  {
+    "class": ["subdps", "support"]
+},
+{
     "name": "Layla",
     "element": "Cryo",
     "rarity": 4,
     "nation": "Sumeru",
     "weapon_type": "Sword",
     "version_released": "3.2",
-    "class": ["subdps", "healer"]
-  },
-
-  {
+    "class": ["shield", "support"]
+},
+{
     "name": "Wanderer",
     "element": "Anemo",
     "rarity": 5,
     "nation": "Sumeru",
     "weapon_type": "Catalyst",
     "version_released": "3.3",
-    "class": ["subdps", "healer"]
-  },
-  {
+    "class": ["maindps"]
+},
+{
     "name": "Faruzan",
     "element": "Anemo",
     "rarity": 4,
     "nation": "Sumeru",
     "weapon_type": "Bow",
     "version_released": "3.3",
-    "class": ["subdps", "healer"]
-  },
-
-  {
+    "class": ["support"]
+},
+{
     "name": "Alhaitham",
     "element": "Dendro",
     "rarity": 5,
     "nation": "Sumeru",
     "weapon_type": "Sword",
     "version_released": "3.4",
-    "class": ["subdps", "healer"]
-  },
-  {
+    "class": ["maindps"]
+},
+{
     "name": "Yaoyao",
     "element": "Dendro",
     "rarity": 4,
     "nation": "Liyue",
     "weapon_type": "Polearm",
     "version_released": "3.4",
-    "class": ["subdps", "healer"]
-  },
-
-  {
+    "class": ["healer", "support"]
+},
+{
     "name": "Dehya",
     "element": "Pyro",
     "rarity": 5,
     "nation": "Sumeru",
     "weapon_type": "Claymore",
     "version_released": "3.5",
-    "class": ["subdps", "healer"]
-  },
-  {
+    "class": ["subdps", "support"]
+},
+{
     "name": "Mika",
     "element": "Cryo",
     "rarity": 4,
     "nation": "Mondstadt",
     "weapon_type": "Polearm",
     "version_released": "3.5",
-    "class": ["subdps", "healer"]
-  },
-
-  {
+    "class": ["support", "healer"]
+},
+{
     "name": "Baizhu",
     "element": "Dendro",
     "rarity": 5,
     "nation": "Liyue",
     "weapon_type": "Catalyst",
     "version_released": "3.6",
-    "class": ["subdps", "healer"]
-  },
-  {
-    "name": "Kaveh",
-    "element": "Dendro",
-    "rarity": 4,
-    "nation": "Sumeru",
-    "weapon_type": "Claymore",
-    "version_released": "3.6",
-    "class": ["subdps", "healer"]
-  },
+    "class": ["healer", "shield", "support"]
+},
 
   {
-    "name": "Kirara",
-    "element": "Dendro",
-    "rarity": 4,
-    "nation": "Inazuma",
-    "weapon_type": "Sword",
-    "version_released": "3.7",
-    "class": ["subdps", "healer"]
-  },
+  "name": "Kaveh",
+  "element": "Dendro",
+  "rarity": 4,
+  "nation": "Sumeru",
+  "weapon_type": "Claymore",
+  "version_released": "3.6",
+  "class": ["support"]
+},
+
+{
+  "name": "Kirara",
+  "element": "Dendro",
+  "rarity": 4,
+  "nation": "Inazuma",
+  "weapon_type": "Sword",
+  "version_released": "3.7",
+  "class": ["support", "shield"]
+},
+
+{
+  "name": "Lyney",
+  "element": "Pyro",
+  "rarity": 5,
+  "nation": "Fontaine",
+  "weapon_type": "Bow",
+  "version_released": "4.0",
+  "class": ["maindps"]
+},
+
+{
+  "name": "Lynette",
+  "element": "Anemo",
+  "rarity": 4,
+  "nation": "Fontaine",
+  "weapon_type": "Sword",
+  "version_released": "4.0",
+  "class": ["subdps", "support"]
+},
+
+{
+  "name": "Freminet",
+  "element": "Cryo",
+  "rarity": 4,
+  "nation": "Fontaine",
+  "weapon_type": "Claymore",
+  "version_released": "4.0",
+  "class": ["maindps"]
+},
+
+{
+  "name": "Neuvillette",
+  "element": "Hydro",
+  "rarity": 5,
+  "nation": "Fontaine",
+  "weapon_type": "Catalyst",
+  "version_released": "4.1",
+  "class": ["maindps"]
+},
+
+{
+  "name": "Wriothesley",
+  "element": "Cryo",
+  "rarity": 5,
+  "nation": "Fontaine",
+  "weapon_type": "Catalyst",
+  "version_released": "4.1",
+  "class": ["maindps"]
+},
+
+{
+  "name": "Furina",
+  "element": "Hydro",
+  "rarity": 5,
+  "nation": "Fontaine",
+  "weapon_type": "Sword",
+  "version_released": "4.2",
+  "class": ["support", "subdps", "healer"]
+},
+
+{
+  "name": "Charlotte",
+  "element": "Cryo",
+  "rarity": 4,
+  "nation": "Fontaine",
+  "weapon_type": "Catalyst",
+  "version_released": "4.2",
+  "class": ["healer", "support"]
+},
+
 
   {
-    "name": "Lyney",
-    "element": "Pyro",
-    "rarity": 5,
-    "nation": "Fontaine",
-    "weapon_type": "Bow",
-    "version_released": "4.0",
-    "class": ["subdps", "healer"]
-  },
-  {
-    "name": "Lynette",
-    "element": "Anemo",
-    "rarity": 4,
-    "nation": "Fontaine",
-    "weapon_type": "Sword",
-    "version_released": "4.0",
-    "class": ["subdps", "healer"]
-  },
-  {
-    "name": "Freminet",
-    "element": "Cryo",
-    "rarity": 4,
-    "nation": "Fontaine",
-    "weapon_type": "Claymore",
-    "version_released": "4.0",
-    "class": ["subdps", "healer"]
-  },
-  {
-    "name": "Neuvillette",
-    "element": "Hydro",
-    "rarity": 5,
-    "nation": "Fontaine",
-    "weapon_type": "Catalyst",
-    "version_released": "4.1",
-    "class": ["subdps", "healer"]
-  },
-  {
-    "name": "Wriothesley",
-    "element": "Cryo",
-    "rarity": 5,
-    "nation": "Fontaine",
-    "weapon_type": "Catalyst",
-    "version_released": "4.1",
-    "class": ["subdps", "healer"]
-  },
+  "name": "Navia",
+  "element": "Geo",
+  "rarity": 5,
+  "nation": "Fontaine",
+  "weapon_type": "Claymore",
+  "version_released": "4.3",
+  "class": ["maindps"]
+},
 
-  {
-    "name": "Furina",
-    "element": "Hydro",
-    "rarity": 5,
-    "nation": "Fontaine",
-    "weapon_type": "Sword",
-    "version_released": "4.2",
-    "class": ["subdps", "healer"]
-  },
-  {
-    "name": "Charlotte",
-    "element": "Cryo",
-    "rarity": 4,
-    "nation": "Fontaine",
-    "weapon_type": "Catalyst",
-    "version_released": "4.2",
-    "class": ["subdps", "healer"]
-  },
+{
+  "name": "Chevreuse",
+  "element": "Pyro",
+  "rarity": 4,
+  "nation": "Fontaine",
+  "weapon_type": "Polearm",
+  "version_released": "4.3",
+  "class": ["support", "healer"]
+},
 
-  {
-    "name": "Navia",
-    "element": "Geo",
-    "rarity": 5,
-    "nation": "Fontaine",
-    "weapon_type": "Claymore",
-    "version_released": "4.3",
-    "class": ["subdps", "healer"]
-  },
-  {
-    "name": "Chevreuse",
-    "element": "Pyro",
-    "rarity": 4,
-    "nation": "Fontaine",
-    "weapon_type": "Polearm",
-    "version_released": "4.3",
-    "class": ["subdps", "healer"]
-  },
+{
+  "name": "Xianyun",
+  "element": "Anemo",
+  "rarity": 5,
+  "nation": "Liyue",
+  "weapon_type": "Catalyst",
+  "version_released": "4.4",
+  "class": ["support", "healer", "subdps"]
+},
 
-  {
-    "name": "Xianyun",
-    "element": "Anemo",
-    "rarity": 5,
-    "nation": "Liyue",
-    "weapon_type": "Catalyst",
-    "version_released": "4.4",
-    "class": ["subdps", "healer"]
-  },
-  {
-    "name": "Gaming",
-    "element": "Pyro",
-    "rarity": 4,
-    "nation": "Liyue",
-    "weapon_type": "Claymore",
-    "version_released": "4.4",
-    "class": ["subdps", "healer"]
-  },
+{
+  "name": "Gaming",
+  "element": "Pyro",
+  "rarity": 4,
+  "nation": "Liyue",
+  "weapon_type": "Claymore",
+  "version_released": "4.4",
+  "class": ["maindps"]
+},
 
-  {
-    "name": "Chiori",
-    "element": "Geo",
-    "rarity": 5,
-    "nation": "Fontaine",
-    "weapon_type": "Sword",
-    "version_released": "4.5",
-    "class": ["subdps", "healer"]
-  },
+{
+  "name": "Chiori",
+  "element": "Geo",
+  "rarity": 5,
+  "nation": "Fontaine",
+  "weapon_type": "Sword",
+  "version_released": "4.5",
+  "class": ["subdps"]
+},
 
-  {
-    "name": "Arlecchino",
-    "element": "Pyro",
-    "rarity": 5,
-    "nation": "Snezhnaya",
-    "weapon_type": "Polearm",
-    "version_released": "4.6",
-    "class": ["subdps", "healer"]
-  },
-  {
-    "name": "Sethos",
-    "element": "Electro",
-    "rarity": 4,
-    "nation": "Sumeru",
-    "weapon_type": "Bow",
-    "version_released": "4.6",
-    "class": ["subdps", "healer"]
-  },
+{
+  "name": "Arlecchino",
+  "element": "Pyro",
+  "rarity": 5,
+  "nation": "Snezhnaya",
+  "weapon_type": "Polearm",
+  "version_released": "4.6",
+  "class": ["maindps"]
+},
 
-  {
-    "name": "Clorinde",
-    "element": "Electro",
-    "rarity": 5,
-    "nation": "Fontaine",
-    "weapon_type": "Sword",
-    "version_released": "4.7",
-    "class": ["subdps", "healer"]
-  },
-  {
-    "name": "Sigewinne",
-    "element": "Hydro",
-    "rarity": 5,
-    "nation": "Fontaine",
-    "weapon_type": "Bow",
-    "version_released": "4.7",
-    "class": ["subdps", "healer"]
-  },
-  {
-    "name": "Emilie",
-    "element": "Dendro",
-    "rarity": 5,
-    "nation": "Fontaine",
-    "weapon_type": "Polearm",
-    "version_released": "4.8",
-    "class": ["subdps", "healer"]
-  },
+{
+  "name": "Sethos",
+  "element": "Electro",
+  "rarity": 4,
+  "nation": "Sumeru",
+  "weapon_type": "Bow",
+  "version_released": "4.6",
+  "class": ["maindps"]
+},
+
+{
+  "name": "Clorinde",
+  "element": "Electro",
+  "rarity": 5,
+  "nation": "Fontaine",
+  "weapon_type": "Sword",
+  "version_released": "4.7",
+  "class": ["maindps"]
+},
+
+{
+  "name": "Sigewinne",
+  "element": "Hydro",
+  "rarity": 5,
+  "nation": "Fontaine",
+  "weapon_type": "Bow",
+  "version_released": "4.7",
+  "class": ["healer", "support"]
+},
+
+{
+  "name": "Emilie",
+  "element": "Dendro",
+  "rarity": 5,
+  "nation": "Fontaine",
+  "weapon_type": "Polearm",
+  "version_released": "4.8",
+  "class": ["subdps", "support"]
+},
 
   {
     "name": "Mualani",
@@ -775,7 +771,7 @@
     "nation": "Natlan",
     "weapon_type": "Catalyst",
     "version_released": "5.0",
-    "class": ["subdps", "healer"]
+    "class": ["maindps"]
   },
   {
     "name": "Kachina",
@@ -784,7 +780,7 @@
     "nation": "Natlan",
     "weapon_type": "Claymore",
     "version_released": "5.0",
-    "class": ["subdps", "healer"]
+    "class": ["subdps", "support"]
   },
   {
     "name": "Kinich",
@@ -793,7 +789,7 @@
     "nation": "Natlan",
     "weapon_type": "Claymore",
     "version_released": "5.0",
-    "class": ["subdps", "healer"]
+    "class": ["maindps"]
   },
   {
     "name": "Xilonen",
@@ -802,7 +798,7 @@
     "nation": "Natlan",
     "weapon_type": "Sword",
     "version_released": "5.1",
-    "class": ["subdps", "healer"]
+    "class": ["maindps", "healer", "support"]
   },
   {
     "name": "Chasca",
@@ -811,7 +807,7 @@
     "nation": "Natlan",
     "weapon_type": "Bow",
     "version_released": "5.2",
-    "class": ["subdps", "healer"]
+    "class": ["maindps"]
   },
   {
     "name": "Ororon",
@@ -820,7 +816,7 @@
     "nation": "Natlan",
     "weapon_type": "Bow",
     "version_released": "5.2",
-    "class": ["subdps", "healer"]
+    "class": ["subdps", "support"]
   },
   {
     "name": "Citlali",
@@ -829,7 +825,7 @@
     "nation": "Natlan",
     "weapon_type": "Catalyst",
     "version_released": "5.3",
-    "class": ["subdps", "healer"]
+    "class": ["shield", "support"]
   },
   {
     "name": "Mauvika",
@@ -838,7 +834,7 @@
     "nation": "Natlan",
     "weapon_type": "Claymore",
     "version_released": "5.3",
-    "class": ["subdps", "healer"]
+    "class": ["maindps", "subdps", "support"]
   },
   {
     "name": "Yumemizuki Mizuki",
@@ -847,7 +843,7 @@
     "nation": "Inazuma",
     "weapon_type": "Catalyst",
     "version_released": "5.4",
-    "class": ["subdps", "healer"]
+    "class": ["maindps", "healer"]
   },
   {
     "name": "Varesa",
@@ -856,7 +852,7 @@
     "nation": "Natlan",
     "weapon_type": "Catalyst",
     "version_released": "5.5",
-    "class": ["subdps", "healer"]
+    "class": ["maindps"]
   },
   {
     "name": "Iansan",
@@ -865,7 +861,7 @@
     "nation": "Natlan",
     "weapon_type": "Polearm",
     "version_released": "5.5",
-    "class": ["subdps", "healer"]
+    "class": ["support", "healer"]
   },
   {
     "name": "Ifa",
@@ -874,7 +870,7 @@
     "nation": "Natlan",
     "weapon_type": "Catalyst",
     "version_released": "5.6",
-    "class": ["subdps", "healer"]
+    "class": ["maindps", "healer"]
   },
   {
     "name": "Escoffier",
@@ -883,7 +879,7 @@
     "nation": "Fontaine",
     "weapon_type": "Polearm",
     "version_released": "5.6",
-    "class": ["subdps", "healer"]
+    "class": ["subdps", "healer", "support"]
   },
   {
     "name": "Dahlia",
@@ -892,7 +888,7 @@
     "nation": "Mondstadt",
     "weapon_type": "Sword",
     "version_released": "5.7",
-    "class": ["subdps", "healer"]
+    "class": ["support", "shield"]
   },
   {
     "name": "Skirk",
@@ -901,7 +897,7 @@
     "nation": "Abyss",
     "weapon_type": "Sword",
     "version_released": "5.7",
-    "class": ["subdps", "healer"]
+    "class": ["maindps", "subdps"]
   },
   {
     "name": "Ineffa",
@@ -910,7 +906,7 @@
     "nation": "Nodkrai",
     "weapon_type": "Polearm",
     "version_released": "5.8",
-    "class": ["subdps", "healer"]
+    "class": ["subdps", "shield", "support"]
   },
   {
     "name": "Lauma",
@@ -919,7 +915,7 @@
     "nation": "Nodkrai",
     "weapon_type": "Catalyst",
     "version_released": "6.0",
-    "class": ["subdps", "healer"]
+    "class": ["subdps", "support"]
   },
   {
     "name": "Aino",
@@ -928,7 +924,7 @@
     "nation": "Nodkrai",
     "weapon_type": "Claymore",
     "version_released": "6.0",
-    "class": ["subdps", "healer"]
+    "class": ["support"]
   },
   {
     "name": "Flins",
@@ -937,7 +933,7 @@
     "nation": "Nodkrai",
     "weapon_type": "Polearm",
     "version_released": "6.0",
-    "class": ["subdps", "healer"]
+    "class": ["maindps"]
   },
   {
     "name": "Nefer",
@@ -946,6 +942,6 @@
     "nation": "Nodkrai",
     "weapon_type": "Catalyst",
     "version_released": "6.1",
-    "class": ["subdps", "healer"]
+    "class": ["maindps"]
   }
 ]
