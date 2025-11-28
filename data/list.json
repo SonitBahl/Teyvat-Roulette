@@ -943,5 +943,24 @@
     "weapon_type": "Catalyst",
     "version_released": "6.1",
     "class": ["maindps"]
+  },
+  {
+    "name": "Jahoda",
+    "element": "Anemo",
+    "rarity": 4,
+    "nation": "Nodkrai",
+    "weapon_type": "Bow",
+    "version_released": "6.2",
+    "class": ["healer", "support"]
+  },
+  {
+    "name": "Durin",
+    "element": "Pyro",
+    "rarity": 5,
+    "nation": "Mondstadt",
+    "weapon_type": "Sword",
+    "version_released": "6.2",
+    "class": ["maindps", "subdps", "support"]
   }
+
 ]
