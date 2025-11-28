@@ -1,24 +1,23 @@
-import { NavLink, Route, Routes } from 'react-router-dom'
+import { Routes, Route, NavLink } from 'react-router-dom'
 import './App.css'
-import BossesPage from './pages/BossesPage'
 import CharacterRoulette from './pages/CharacterRoulette'
+import BossesPage from './pages/BossesPage'
 
 function App() {
   return (
     <div className="app-shell">
       <header className="site-hero">
-        <h1>Teyvat Companion Hub</h1>
-        <p>Spin for heroes or browse every boss across the regions of Teyvat.</p>
+        <h1>🎰 Teyvat Roulette</h1>
+        <p>Random character and boss selectors for Genshin Impact</p>
         <nav className="site-nav">
-          <NavLink to="/" end className={({ isActive }) => `nav-link${isActive ? ' active' : ''}`}>
-            Character Roulette
+          <NavLink to="/" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
+            Characters
           </NavLink>
-          <NavLink to="/bosses" className={({ isActive }) => `nav-link${isActive ? ' active' : ''}`}>
-            Boss Directory
+          <NavLink to="/bosses" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
+            Bosses
           </NavLink>
         </nav>
       </header>
-
       <main className="page-content">
         <Routes>
           <Route path="/" element={<CharacterRoulette />} />

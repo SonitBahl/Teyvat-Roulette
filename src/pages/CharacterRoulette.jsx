@@ -9,7 +9,8 @@ function CharacterRoulette() {
     weapon_type: [],
     element: [],
     nation: [],
-    rarity: []
+    rarity: [],
+    class: []
   })
   const [isSpinning, setIsSpinning] = useState(false)
   const [selectedCharacter, setSelectedCharacter] = useState(null)
@@ -21,6 +22,10 @@ function CharacterRoulette() {
   const elements = useMemo(() => [...new Set(characters.map(c => c.element))].sort(), [characters])
   const nations = useMemo(() => [...new Set(characters.map(c => c.nation))].sort(), [characters])
   const rarities = useMemo(() => [...new Set(characters.map(c => c.rarity))].sort((a, b) => b - a), [characters])
+  const classes = useMemo(() => {
+    const allClasses = characters.flatMap(c => c.class || [])
+    return [...new Set(allClasses)].sort()
+  }, [characters])
 
   const filteredCharacters = useMemo(() => {
     return characters.filter(char => {
@@ -28,6 +33,12 @@ function CharacterRoulette() {
       if (filters.element.length > 0 && !filters.element.includes(char.element)) return false
       if (filters.nation.length > 0 && !filters.nation.includes(char.nation)) return false
       if (filters.rarity.length > 0 && !filters.rarity.includes(char.rarity)) return false
+      if (filters.class.length > 0) {
+        // Check if character has any of the selected classes
+        const charClasses = char.class || []
+        const hasSelectedClass = filters.class.some(selectedClass => charClasses.includes(selectedClass))
+        if (!hasSelectedClass) return false
+      }
       return true
     })
   }, [characters, filters])
@@ -50,7 +61,8 @@ function CharacterRoulette() {
       weapon_type: [],
       element: [],
       nation: [],
-      rarity: []
+      rarity: [],
+      class: []
     })
     setSelectedCharacter(null)
   }
@@ -189,6 +201,21 @@ function CharacterRoulette() {
                 </div>
               </div>
 
+              <div className="filter-group">
+                <label>Class</label>
+                <div className="filter-buttons">
+                  {classes.map(cls => (
+                    <button
+                      key={cls}
+                      className={`filter-btn ${filters.class.includes(cls) ? 'active' : ''}`}
+                      onClick={() => handleFilterChange('class', cls)}
+                    >
+                      {cls}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
               <div className="character-count">
                 <strong>{filteredCharacters.length}</strong> character{filteredCharacters.length !== 1 ? 's' : ''} available
               </div>
@@ -224,6 +251,11 @@ function CharacterRoulette() {
                 <span className="badge weapon-badge">{selectedCharacter.weapon_type}</span>
                 <span className="badge nation-badge">{selectedCharacter.nation}</span>
                 <span className="badge rarity-badge">{'⭐'.repeat(selectedCharacter.rarity)}</span>
+                {selectedCharacter.class && selectedCharacter.class.length > 0 && (
+                  selectedCharacter.class.map((cls, index) => (
+                    <span key={index} className="badge class-badge">{cls}</span>
+                  ))
+                )}
               </div>
             </div>
             <button className="popup-close-btn" onClick={closePopup}>
