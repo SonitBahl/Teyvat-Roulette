@@ -12,9 +12,7 @@ const formatLabel = value => value.split(' ').map(word => word.charAt(0).toUpper
 
 function BossesPage() {
   const [filters, setFilters] = useState(defaultFilters)
-  const [isSpinning, setIsSpinning] = useState(false)
   const [selectedBoss, setSelectedBoss] = useState(null)
-  const [wheelRotation, setWheelRotation] = useState(0)
   const [showPopup, setShowPopup] = useState(false)
 
   const bosses = useMemo(() => [...bossesData].sort((a, b) => a.name.localeCompare(b.name)), [])
@@ -40,21 +38,12 @@ function BossesPage() {
   const clearFilters = () => setFilters(defaultFilters)
 
   const spinWheel = () => {
-    if (filteredBosses.length === 0 || isSpinning) return
+    if (filteredBosses.length === 0) return
 
-    setIsSpinning(true)
-    setSelectedBoss(null)
-    setShowPopup(false)
-
-    const randomRotation = wheelRotation + 360 * (5 + Math.random() * 5) + Math.random() * 360
-    setWheelRotation(randomRotation)
-
-    setTimeout(() => {
-      const randomIndex = Math.floor(Math.random() * filteredBosses.length)
-      setSelectedBoss(filteredBosses[randomIndex])
-      setIsSpinning(false)
-      setShowPopup(true)
-    }, 3000)
+    // Directly select and show result without animation
+    const randomIndex = Math.floor(Math.random() * filteredBosses.length)
+    setSelectedBoss(filteredBosses[randomIndex])
+    setShowPopup(true)
   }
 
   const closePopup = () => setShowPopup(false)
@@ -98,13 +87,13 @@ function BossesPage() {
         <div className="bosses-wheel">
           <Wheel
             items={filteredBosses}
-            isSpinning={isSpinning}
-            rotation={wheelRotation}
+            isSpinning={false}
+            rotation={0}
             selectedItem={selectedBoss}
             emptyMessage="No bosses match the selected filters"
           />
-          <button className="spin-button" onClick={spinWheel} disabled={filteredBosses.length === 0 || isSpinning}>
-            {isSpinning ? 'Spinning...' : filteredBosses.length === 0 ? 'No Bosses Available' : 'Spin the Boss Roulette'}
+          <button className="spin-button" onClick={spinWheel} disabled={filteredBosses.length === 0}>
+            {filteredBosses.length === 0 ? 'No Bosses Available' : 'Spin the Boss Roulette'}
           </button>
 
           {selectedBoss && (

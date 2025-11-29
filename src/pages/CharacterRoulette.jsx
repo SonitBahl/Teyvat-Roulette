@@ -12,9 +12,7 @@ function CharacterRoulette() {
     rarity: [],
     class: []
   })
-  const [isSpinning, setIsSpinning] = useState(false)
   const [selectedCharacter, setSelectedCharacter] = useState(null)
-  const [wheelRotation, setWheelRotation] = useState(0)
   const [showFilters, setShowFilters] = useState(false)
   const [showPopup, setShowPopup] = useState(false)
 
@@ -68,21 +66,12 @@ function CharacterRoulette() {
   }
 
   const spinWheel = () => {
-    if (filteredCharacters.length === 0 || isSpinning) return
+    if (filteredCharacters.length === 0) return
 
-    setIsSpinning(true)
-    setSelectedCharacter(null)
-    setShowPopup(false)
-
-    const randomRotation = wheelRotation + 360 * (5 + Math.random() * 5) + Math.random() * 360
-    setWheelRotation(randomRotation)
-
-    setTimeout(() => {
-      const randomIndex = Math.floor(Math.random() * filteredCharacters.length)
-      setSelectedCharacter(filteredCharacters[randomIndex])
-      setIsSpinning(false)
-      setShowPopup(true)
-    }, 3000)
+    // Directly select and show result without animation
+    const randomIndex = Math.floor(Math.random() * filteredCharacters.length)
+    setSelectedCharacter(filteredCharacters[randomIndex])
+    setShowPopup(true)
   }
 
   const closePopup = () => {
@@ -226,13 +215,13 @@ function CharacterRoulette() {
         <div className="wheel-container">
           <Wheel
             items={filteredCharacters}
-            isSpinning={isSpinning}
-            rotation={wheelRotation}
+            isSpinning={false}
+            rotation={0}
             selectedItem={selectedCharacter}
             emptyMessage="No characters match the selected filters"
           />
-          <button className="spin-button" onClick={spinWheel} disabled={filteredCharacters.length === 0 || isSpinning}>
-            {isSpinning ? 'Spinning...' : filteredCharacters.length === 0 ? 'No Characters Available' : 'Spin the Wheel!'}
+          <button className="spin-button" onClick={spinWheel} disabled={filteredCharacters.length === 0}>
+            {filteredCharacters.length === 0 ? 'No Characters Available' : 'Spin the Wheel!'}
           </button>
         </div>
       </div>
