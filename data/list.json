@@ -225,7 +225,7 @@
     "nation": "Mondstadt",
     "weapon_type": "Sword",
     "version_released": "1.2",
-    "class": ["Sub Dps", "Buffer"]
+    "class": ["Sub DPS", "Buffer"]
 },
 {
     "name": "Ganyu",
@@ -453,7 +453,7 @@
     "nation": "Sumeru",
     "weapon_type": "Bow",
     "version_released": "3.0",
-    "class": ["Buffer", "Debuffer", "Sub Dps"]
+    "class": ["Buffer", "Debuffer", "Sub DPS"]
 },
 {
     "name": "Dori",
@@ -480,7 +480,7 @@
     "nation": "Sumeru",
     "weapon_type": "Sword",
     "version_released": "3.1",
-    "class": []
+    "class": ["Driver"]
 },
 {
     "name": "Candace",
@@ -711,7 +711,7 @@
   "nation": "Fontaine",
   "weapon_type": "Sword",
   "version_released": "4.5",
-  "class": ["Sub Dps"]
+  "class": ["Sub DPS"]
 },
 
 {
@@ -761,7 +761,7 @@
   "nation": "Fontaine",
   "weapon_type": "Polearm",
   "version_released": "4.8",
-  "class": ["Sub Dps", "Debuffer"]
+  "class": ["Sub DPS", "Debuffer"]
 },
 
   {
@@ -951,7 +951,7 @@
     "nation": "Nodkrai",
     "weapon_type": "Bow",
     "version_released": "6.2",
-    "class": []
+    "class": ["Healer", "Buffer", "Debuffer"]
   },
   {
     "name": "Durin",
@@ -960,7 +960,7 @@
     "nation": "Mondstadt",
     "weapon_type": "Sword",
     "version_released": "6.2",
-    "class": []
+    "class": ["Sub DPS", "Debuffer"]
   }
 
 ]
