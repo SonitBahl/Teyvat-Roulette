@@ -39,6 +39,7 @@
   { "name": "Knuckle Duckle", "type": "boss", "region": "Nodkrai" },
   { "name": "Radiant Moonfly", "type": "boss", "region": "Nodkrai" },
   { "name": "Frostnight Herra", "type": "boss", "region": "Nodkrai" },
+  {"name": "Super-Heavy Landrover: Mechanized Fortress", "type": "boss", "region": "Nodkrai"},
 
   { "name": "Lupus Boreas", "type": "weekly", "region": "Mondstadt" },
   { "name": "Childe", "type": "weekly", "region": "Liyue" },
