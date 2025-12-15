@@ -2,6 +2,7 @@ import { Routes, Route, NavLink } from 'react-router-dom'
 import './App.css'
 import CharacterRoulette from './pages/CharacterRoulette'
 import BossesPage from './pages/BossesPage'
+import CollagePage from './pages/CollagePage'
 
 function App() {
   return (
@@ -16,12 +17,16 @@ function App() {
           <NavLink to="/bosses" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
             Bosses
           </NavLink>
+          <NavLink to="/collage" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
+            Memories
+          </NavLink>
         </nav>
       </header>
       <main className="page-content">
         <Routes>
           <Route path="/" element={<CharacterRoulette />} />
           <Route path="/bosses" element={<BossesPage />} />
+          <Route path="/collage" element={<CollagePage />} />
         </Routes>
       </main>
     </div>
