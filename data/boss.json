@@ -64,13 +64,12 @@
   { "name": "Luachra the Brilliant", "type": "local legend", "region": "Fontaine" },
   { "name": "Yseut", "type": "local legend", "region": "Fontaine" },
   { "name": "Fading Veteran", "type": "local legend", "region": "Fontaine" },
-  { "name": "Ocean Circuit Judge", "type": "local legend", "region": "Fontaine" },
   { "name": "Fairy Knight Twins", "type": "local legend", "region": "Fontaine" },
   { "name": "Swords of the Gorge", "type": "local legend", "region": "Fontaine" },
   { "name": "Dobharcu, Lord of the Hidden", "type": "local legend", "region": "Fontaine" },
   { "name": "Ninianne of the Lake", "type": "local legend", "region": "Fontaine" },
   { "name": "Vivianne of the Lake", "type": "local legend", "region": "Fontaine" },
-  { "name": "Iron Viscount", "type": "local legend", "region": "Fontaine" },
+
 
   { "name": "The Last Survivor of Tenochtzitoc", "type": "local legend", "region": "Natlan" },
   { "name": "Infinitesimal", "type": "local legend", "region": "Natlan" },
