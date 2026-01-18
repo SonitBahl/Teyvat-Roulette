@@ -969,7 +969,7 @@
     "nation": "Nodkrai",
     "weapon_type": "Catalyst",
     "version_released": "6.3",
-    "class": ["Buffer", "Sub DPS", "Driver", "Battery", "Main DPS"]
+    "class": ["Buffer", "Sub DPS", "Driver", "Battery", "DPS"]
   },
   {
     "name": "Illuga",
@@ -987,7 +987,7 @@
     "nation": "Liyue",
     "weapon_type": "Sword",
     "version_released": "6.3",
-    "class": ["Main DPS"]
+    "class": ["DPS"]
   }
 
 ]
