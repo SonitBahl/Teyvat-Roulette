@@ -961,6 +961,33 @@
     "weapon_type": "Sword",
     "version_released": "6.2",
     "class": ["Sub DPS", "Debuffer"]
+  },
+  {
+    "name": "Columbina",
+    "element": "Hydro",
+    "rarity": 5,
+    "nation": "Nodkrai",
+    "weapon_type": "Catalyst",
+    "version_released": "6.3",
+    "class": ["Buffer", "Sub DPS", "Driver", "Battery", "Main DPS"]
+  },
+  {
+    "name": "Illuga",
+    "element": "Geo",
+    "rarity": 4,
+    "nation": "Nodkrai",
+    "weapon_type": "Polearm",
+    "version_released": "6.3",
+    "class": ["Buffer"]
+  },
+  {
+    "name": "Zibai",
+    "element": "Geo",
+    "rarity": 5,
+    "nation": "Liyue",
+    "weapon_type": "Sword",
+    "version_released": "6.3",
+    "class": ["Main DPS"]
   }
 
 ]
