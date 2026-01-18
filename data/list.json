@@ -969,7 +969,7 @@
     "nation": "Nodkrai",
     "weapon_type": "Catalyst",
     "version_released": "6.3",
-    "class": ["Buffer", "Sub DPS", "Driver", "Battery", "DPS"]
+    "class": ["Buffer", "Sub DPS", "Driver", "Battery"]
   },
   {
     "name": "Illuga",
