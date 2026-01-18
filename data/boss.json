@@ -40,6 +40,7 @@
   { "name": "Radiant Moonfly", "type": "boss", "region": "Nodkrai" },
   { "name": "Frostnight Herra", "type": "boss", "region": "Nodkrai" },
   {"name": "Super-Heavy Landrover: Mechanized Fortress", "type": "boss", "region": "Nodkrai"},
+  {"name": "Lord of the Hidden Depths - Whisperer of Nightmares", "type": "boss", "region": "Nodkrai"},
 
   { "name": "Lupus Boreas", "type": "weekly", "region": "Mondstadt" },
   { "name": "Childe", "type": "weekly", "region": "Liyue" },
@@ -53,6 +54,12 @@
   { "name": "Eroded Primal Fire", "type": "weekly", "region": "Natlan" },
   { "name": "Eternal Annihilator 'Chess Set'", "type": "weekly", "region": "Mondstadt" },
   { "name": "Ruler of the Chizhang Mountains", "type": "local legend", "region": "Liyue" },
+  { "name": "The Doctor - Dottore", "type": "weekly", "region": "Nodkrai"},
+  { "name": "Hexadecatonic Mandragora", "type": "local legend", "region": "Nodkrai"},
+  { "name": "Hiljetta", "type": "local legend", "region": "Nodkrai"},
+  { "name": "The Homesick Lone Wolf", "type": "local legend", "region": "Nodkrai"},
+
+
 
   { "name": "Cineas", "type": "local legend", "region": "Fontaine" },
   { "name": "Deianeira of Snezhevna", "type": "local legend", "region": "Fontaine" },
