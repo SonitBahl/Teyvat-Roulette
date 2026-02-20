@@ -3,6 +3,7 @@ import './App.css'
 import CharacterRoulette from './pages/CharacterRoulette'
 import BossesPage from './pages/BossesPage'
 import CollagePage from './pages/CollagePage'
+import CustomWheel from './pages/CustomWheel'
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
           <NavLink to="/collage" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
             Memories
           </NavLink>
+          <NavLink to="/custom" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
+            Custom Wheel
+          </NavLink>
         </nav>
       </header>
       <main className="page-content">
@@ -27,6 +31,7 @@ function App() {
           <Route path="/" element={<CharacterRoulette />} />
           <Route path="/bosses" element={<BossesPage />} />
           <Route path="/collage" element={<CollagePage />} />
+          <Route path="/custom" element={<CustomWheel />} />
         </Routes>
       </main>
     </div>
