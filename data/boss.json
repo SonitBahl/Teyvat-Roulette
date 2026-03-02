@@ -103,5 +103,6 @@
   { "name": "Sigurd", "type": "local legend", "region": "Nodkrai", "compliant": "yes" },
   { "name": "Hexadecatonic Mandragora", "type": "local legend", "region": "Nodkrai", "compliant": "yes" },
   { "name": "Hiljetta", "type": "local legend", "region": "Nodkrai", "compliant": "yes" },
-  { "name": "The Homesick Lone Wolf", "type": "local legend", "region": "Nodkrai", "compliant": "yes" }
+  { "name": "The Homesick Lone Wolf", "type": "local legend", "region": "Nodkrai", "compliant": "yes" },
+  { "name": "Radiant Moongecko", "type": "boss", "region": "Nodkrai", "compliant": "yes" }
 ]

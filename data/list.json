@@ -53,6 +53,15 @@
     "version_released": "1.0",
     "class": ["DPS", "Sub DPS", "Debuffer", "Battery"]
   },
+  {
+    "name": "Klee",
+    "element": "Pyro",
+    "rarity": 5,
+    "nation": "Mondstadt",
+    "weapon_type": "Catalyst",
+    "version_released": "1.0",
+    "class": ["DPS", "Debuffer"]
+  },
 
   {
     "name": "Amber",
@@ -987,6 +996,15 @@
     "nation": "Liyue",
     "weapon_type": "Sword",
     "version_released": "6.3",
+    "class": ["DPS"]
+  },
+  {
+    "name": "Varka",
+    "element": "Anemo",
+    "rarity": 5,
+    "nation": "Mondstadt",
+    "weapon_type": "Claymore",
+    "version_released": "6.4",
     "class": ["DPS"]
   }
 
