@@ -1,3 +1,5 @@
+@import './styles/WelcomeScreen.css';
+
 .app-shell {
   min-height: 100vh;
   padding: 2rem;
