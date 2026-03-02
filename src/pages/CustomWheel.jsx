@@ -113,7 +113,7 @@ function CustomWheel() {
   return (
     <div className="roulette-page">
       <div className="header">
-        <h1>🎰 Custom Wheel</h1>
+        <h1>🎰 Player Wheel</h1>
         <p>Spin the wheel to randomly select a person!</p>
       </div>
 

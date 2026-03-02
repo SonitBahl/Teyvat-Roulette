@@ -26,7 +26,7 @@ function App() {
               Memories
             </NavLink>
             <NavLink to="/custom" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
-              Custom Wheel
+              Player Wheel
             </NavLink>
             <NavLink to="/numbers" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
               Number Wheel
