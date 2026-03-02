@@ -3,15 +3,26 @@ import '../App.css'
 
 function Wheel({ items, isSpinning, highlightedIndex, selectedItem, emptyMessage = 'No options available' }) {
   const [isCelebrating, setIsCelebrating] = useState(false)
+  const [wasAnimated, setWasAnimated] = useState(false)
 
-  // Trigger celebration when spinning stops and we have a selected item
+  // Track if animation was used
   useEffect(() => {
-    if (!isSpinning && selectedItem) {
+    if (isSpinning) {
+      setWasAnimated(true)
+    }
+  }, [isSpinning])
+
+  // Trigger celebration only when animation was used and spinning stops
+  useEffect(() => {
+    if (!isSpinning && selectedItem && wasAnimated) {
       setIsCelebrating(true)
-      const timer = setTimeout(() => setIsCelebrating(false), 1000)
+      const timer = setTimeout(() => {
+        setIsCelebrating(false)
+        setWasAnimated(false) // Reset for next spin
+      }, 1000)
       return () => clearTimeout(timer)
     }
-  }, [isSpinning, selectedItem])
+  }, [isSpinning, selectedItem, wasAnimated])
 
   if (!items.length) {
     return (

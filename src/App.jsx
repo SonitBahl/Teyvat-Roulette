@@ -4,6 +4,7 @@ import CharacterRoulette from './pages/CharacterRoulette'
 import BossesPage from './pages/BossesPage'
 import CollagePage from './pages/CollagePage'
 import CustomWheel from './pages/CustomWheel'
+import NumberWheel from './pages/NumberWheel'
 import Settings from './pages/Settings'
 import { SettingsProvider } from './contexts/SettingsContext'
 
@@ -27,6 +28,9 @@ function App() {
             <NavLink to="/custom" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
               Custom Wheel
             </NavLink>
+            <NavLink to="/numbers" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
+              Number Wheel
+            </NavLink>
             <NavLink to="/settings" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
               Settings
             </NavLink>
@@ -38,6 +42,7 @@ function App() {
             <Route path="/bosses" element={<BossesPage />} />
             <Route path="/collage" element={<CollagePage />} />
             <Route path="/custom" element={<CustomWheel />} />
+            <Route path="/numbers" element={<NumberWheel />} />
             <Route path="/settings" element={<Settings />} />
           </Routes>
         </main>

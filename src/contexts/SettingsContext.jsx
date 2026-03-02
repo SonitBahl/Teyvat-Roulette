@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useState } from 'react'
 
 const DEFAULT_SETTINGS = {
-  wheelAnimation: true,
+  wheelAnimation: false,
   showNonCompliantBosses: false
 }
 

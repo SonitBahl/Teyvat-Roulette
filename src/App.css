@@ -361,6 +361,65 @@ input:checked + .toggle-slider:before {
   line-height: 1.5;
 }
 
+/* Number Wheel Controls */
+.number-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  gap: 2rem;
+}
+
+.control-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.decrease-controls button,
+.increase-controls button {
+  padding: 0.75rem 1rem;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 60px;
+}
+
+.decrease-controls button:hover:not(:disabled),
+.increase-controls button:hover:not(:disabled) {
+  background: #5a6fd8;
+  transform: translateY(-2px);
+}
+
+.decrease-controls button:disabled,
+.increase-controls button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.center-display {
+  flex: 1;
+  text-align: center;
+}
+
+.max-count-display {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  padding: 0.75rem 1.5rem;
+  background: rgba(103, 126, 234, 0.1);
+  border-radius: 8px;
+  border: 2px solid rgba(103, 126, 234, 0.3);
+}
+
 .nav-link.active {
   background: white;
   color: #5a4bff;
