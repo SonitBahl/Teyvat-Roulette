@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import '../App.css'
 import Wheel from '../components/Wheel'
+import { useSettings } from '../contexts/SettingsContext'
 
 function CustomWheel() {
   const predefinedOptions = ['Light', 'Chiko', 'Nyx', 'Lirz', 'Dango', 'Mal', 'Mocca', 'Aren']
@@ -16,6 +17,9 @@ function CustomWheel() {
   const [newPersonInput, setNewPersonInput] = useState('')
   const [selectedPerson, setSelectedPerson] = useState(null)
   const [showPopup, setShowPopup] = useState(false)
+  const [isSpinning, setIsSpinning] = useState(false)
+  const [highlightedIndex, setHighlightedIndex] = useState(-1)
+  const { settings } = useSettings()
 
   const getWheelItems = () => {
     const activePredefined = predefinedOptions.filter(option => selectedOptions[option])
@@ -46,12 +50,57 @@ function CustomWheel() {
 
   const spinWheel = () => {
     const wheelItems = getWheelItems()
-    if (wheelItems.length === 0) return
+    if (wheelItems.length === 0 || isSpinning) return
 
-    const randomIndex = Math.floor(Math.random() * wheelItems.length)
-    const selected = wheelItems[randomIndex]
-    setSelectedPerson(selected)
-    setShowPopup(true)
+    const finalIndex = Math.floor(Math.random() * wheelItems.length)
+    const selected = wheelItems[finalIndex]
+
+    if (settings.wheelAnimation) {
+      // Sequential highlighting animation
+      setIsSpinning(true)
+      setHighlightedIndex(-1) // Reset highlight
+      
+      // Calculate animation sequence for 5-second duration
+      const totalDuration = 5000 // 5 seconds total
+      let currentIndex = 0
+      let elapsed = 0
+      let currentDelay = 30 // Start very fast
+      
+      const animateNext = () => {
+        if (elapsed >= totalDuration) {
+          // Final stop on selected person
+          setHighlightedIndex(finalIndex)
+          setTimeout(() => {
+            setIsSpinning(false)
+            setSelectedPerson(selected)
+            setShowPopup(true)
+          }, 500)
+          return
+        }
+        
+        // Move to next index
+        currentIndex = (currentIndex + 1) % wheelItems.length
+        
+        // Calculate progress for easing
+        const progress = elapsed / totalDuration
+        const easeOutProgress = 1 - Math.pow(1 - progress, 3) // Cubic ease-out
+        
+        // Dramatic slowdown: start at 30ms, end at ~600ms
+        currentDelay = 30 + (570 * easeOutProgress)
+        
+        setHighlightedIndex(currentIndex)
+        elapsed += currentDelay
+        
+        setTimeout(animateNext, currentDelay)
+      }
+      
+      // Start animation
+      setTimeout(animateNext, 100)
+    } else {
+      // Instant selection without animation
+      setSelectedPerson(selected)
+      setShowPopup(true)
+    }
   }
 
   const closePopup = () => {
@@ -125,13 +174,13 @@ function CustomWheel() {
         <div className="wheel-container">
           <Wheel
             items={wheelItems.map(name => ({ name }))}
-            isSpinning={false}
-            rotation={0}
+            isSpinning={isSpinning}
+            highlightedIndex={highlightedIndex}
             selectedItem={selectedPerson ? { name: selectedPerson } : null}
             emptyMessage="No people selected for the wheel"
           />
-          <button className="spin-button" onClick={spinWheel} disabled={activeCount === 0}>
-            {activeCount === 0 ? 'No People Available' : 'Spin the Wheel!'}
+          <button className="spin-button" onClick={spinWheel} disabled={activeCount === 0 || isSpinning}>
+            {isSpinning ? 'Spinning...' : activeCount === 0 ? 'No People Available' : 'Spin the Wheel!'}
           </button>
         </div>
       </div>

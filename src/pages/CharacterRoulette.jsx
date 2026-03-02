@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import '../App.css'
 import Wheel from '../components/Wheel'
 import charactersData from '../../data/list.json'
+import { useSettings } from '../contexts/SettingsContext'
 
 function CharacterRoulette() {
   const characters = charactersData
@@ -15,6 +16,9 @@ function CharacterRoulette() {
   const [selectedCharacter, setSelectedCharacter] = useState(null)
   const [showFilters, setShowFilters] = useState(false)
   const [showPopup, setShowPopup] = useState(false)
+  const [isSpinning, setIsSpinning] = useState(false)
+  const [highlightedIndex, setHighlightedIndex] = useState(-1)
+  const { settings } = useSettings()
 
   const weaponTypes = useMemo(() => [...new Set(characters.map(c => c.weapon_type))].sort(), [characters])
   const elements = useMemo(() => [...new Set(characters.map(c => c.element))].sort(), [characters])
@@ -66,12 +70,57 @@ function CharacterRoulette() {
   }
 
   const spinWheel = () => {
-    if (filteredCharacters.length === 0) return
+    if (filteredCharacters.length === 0 || isSpinning) return
 
-    // Directly select and show result without animation
-    const randomIndex = Math.floor(Math.random() * filteredCharacters.length)
-    setSelectedCharacter(filteredCharacters[randomIndex])
-    setShowPopup(true)
+    const finalIndex = Math.floor(Math.random() * filteredCharacters.length)
+    const selectedCharacter = filteredCharacters[finalIndex]
+
+    if (settings.wheelAnimation) {
+      // Sequential highlighting animation
+      setIsSpinning(true)
+      setHighlightedIndex(-1) // Reset highlight
+      
+      // Calculate animation sequence for 5-second duration
+      const totalDuration = 5000 // 5 seconds total
+      let currentIndex = 0
+      let elapsed = 0
+      let currentDelay = 30 // Start very fast
+      
+      const animateNext = () => {
+        if (elapsed >= totalDuration) {
+          // Final stop on selected character
+          setHighlightedIndex(finalIndex)
+          setTimeout(() => {
+            setIsSpinning(false)
+            setSelectedCharacter(selectedCharacter)
+            setShowPopup(true)
+          }, 500)
+          return
+        }
+        
+        // Move to next index
+        currentIndex = (currentIndex + 1) % filteredCharacters.length
+        
+        // Calculate progress for easing
+        const progress = elapsed / totalDuration
+        const easeOutProgress = 1 - Math.pow(1 - progress, 3) // Cubic ease-out
+        
+        // Dramatic slowdown: start at 30ms, end at ~600ms
+        currentDelay = 30 + (570 * easeOutProgress)
+        
+        setHighlightedIndex(currentIndex)
+        elapsed += currentDelay
+        
+        setTimeout(animateNext, currentDelay)
+      }
+      
+      // Start animation
+      setTimeout(animateNext, 100)
+    } else {
+      // Instant selection without animation
+      setSelectedCharacter(selectedCharacter)
+      setShowPopup(true)
+    }
   }
 
   const closePopup = () => {
@@ -215,13 +264,13 @@ function CharacterRoulette() {
         <div className="wheel-container">
           <Wheel
             items={filteredCharacters}
-            isSpinning={false}
-            rotation={0}
+            isSpinning={isSpinning}
+            highlightedIndex={highlightedIndex}
             selectedItem={selectedCharacter}
             emptyMessage="No characters match the selected filters"
           />
-          <button className="spin-button" onClick={spinWheel} disabled={filteredCharacters.length === 0}>
-            {filteredCharacters.length === 0 ? 'No Characters Available' : 'Spin the Wheel!'}
+          <button className="spin-button" onClick={spinWheel} disabled={filteredCharacters.length === 0 || isSpinning}>
+            {isSpinning ? 'Spinning...' : filteredCharacters.length === 0 ? 'No Characters Available' : 'Spin the Wheel!'}
           </button>
         </div>
       </div>

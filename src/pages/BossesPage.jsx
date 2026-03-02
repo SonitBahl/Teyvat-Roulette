@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import '../App.css'
 import Wheel from '../components/Wheel'
 import bossesData from '../../data/boss.json'
+import { useSettings } from '../contexts/SettingsContext'
 
 const defaultFilters = {
   region: 'all',
@@ -14,6 +15,9 @@ function BossesPage() {
   const [filters, setFilters] = useState(defaultFilters)
   const [selectedBoss, setSelectedBoss] = useState(null)
   const [showPopup, setShowPopup] = useState(false)
+  const [isSpinning, setIsSpinning] = useState(false)
+  const [highlightedIndex, setHighlightedIndex] = useState(-1)
+  const { settings } = useSettings()
 
   const bosses = useMemo(() => [...bossesData].sort((a, b) => a.name.localeCompare(b.name)), [])
   const regions = useMemo(() => ['all', ...Array.from(new Set(bossesData.map(boss => boss.region))).sort()], [])
@@ -23,9 +27,10 @@ function BossesPage() {
     return bosses.filter(boss => {
       if (filters.region !== 'all' && boss.region !== filters.region) return false
       if (filters.type !== 'all' && boss.type !== filters.type) return false
+      if (!settings.showNonCompliantBosses && boss.compliant === 'no') return false
       return true
     })
-  }, [bosses, filters])
+  }, [bosses, filters, settings.showNonCompliantBosses])
 
   const handleSelectChange = event => {
     const { name, value } = event.target
@@ -38,12 +43,64 @@ function BossesPage() {
   const clearFilters = () => setFilters(defaultFilters)
 
   const spinWheel = () => {
-    if (filteredBosses.length === 0) return
+    if (filteredBosses.length === 0 || isSpinning) return
 
-    // Directly select and show result without animation
-    const randomIndex = Math.floor(Math.random() * filteredBosses.length)
-    setSelectedBoss(filteredBosses[randomIndex])
-    setShowPopup(true)
+    const finalIndex = Math.floor(Math.random() * filteredBosses.length)
+    const selectedBoss = filteredBosses[finalIndex]
+
+    if (settings.wheelAnimation) {
+      // Sequential highlighting animation
+      setIsSpinning(true)
+      setHighlightedIndex(-1) // Reset highlight
+      
+      // Calculate animation sequence for 5-second duration
+      const totalDuration = 5000 // 5 seconds total
+      const baseSpins = 10 // Base number of cycles
+      let currentIndex = 0
+      let spinCount = 0
+      let elapsed = 0
+      let currentDelay = 30 // Start very fast
+      
+      const animateNext = () => {
+        if (elapsed >= totalDuration) {
+          // Final stop on selected boss
+          setHighlightedIndex(finalIndex)
+          setTimeout(() => {
+            setIsSpinning(false)
+            setSelectedBoss(selectedBoss)
+            setShowPopup(true)
+          }, 500)
+          return
+        }
+        
+        // Move to next index
+        currentIndex = (currentIndex + 1) % filteredBosses.length
+        
+        // Calculate progress for easing
+        const progress = elapsed / totalDuration
+        const easeOutProgress = 1 - Math.pow(1 - progress, 3) // Cubic ease-out
+        
+        // Dramatic slowdown: start at 30ms, end at ~600ms
+        currentDelay = 30 + (570 * easeOutProgress)
+        
+        // Check if we completed a full rotation
+        if (currentIndex === 0) {
+          spinCount++
+        }
+        
+        setHighlightedIndex(currentIndex)
+        elapsed += currentDelay
+        
+        setTimeout(animateNext, currentDelay)
+      }
+      
+      // Start animation
+      setTimeout(animateNext, 100)
+    } else {
+      // Instant selection without animation
+      setSelectedBoss(selectedBoss)
+      setShowPopup(true)
+    }
   }
 
   const closePopup = () => setShowPopup(false)
@@ -87,13 +144,13 @@ function BossesPage() {
         <div className="bosses-wheel">
           <Wheel
             items={filteredBosses}
-            isSpinning={false}
-            rotation={0}
+            isSpinning={isSpinning}
+            highlightedIndex={highlightedIndex}
             selectedItem={selectedBoss}
             emptyMessage="No bosses match the selected filters"
           />
-          <button className="spin-button" onClick={spinWheel} disabled={filteredBosses.length === 0}>
-            {filteredBosses.length === 0 ? 'No Bosses Available' : 'Spin the Boss Roulette'}
+          <button className="spin-button" onClick={spinWheel} disabled={filteredBosses.length === 0 || isSpinning}>
+            {isSpinning ? 'Spinning...' : filteredBosses.length === 0 ? 'No Bosses Available' : 'Spin the Boss Roulette'}
           </button>
 
           {selectedBoss && (
