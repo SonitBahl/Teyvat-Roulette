@@ -1,5 +1,6 @@
 import { Routes, Route, NavLink } from 'react-router-dom'
 import './App.css'
+import './themes/ThemeVariables.css'
 import { useState, useEffect } from 'react'
 import CharacterRoulette from './pages/CharacterRoulette'
 import BossesPage from './pages/BossesPage'
@@ -9,6 +10,7 @@ import NumberWheel from './pages/NumberWheel'
 import Settings from './pages/Settings'
 import WelcomeScreen from './pages/WelcomeScreen'
 import { SettingsProvider } from './contexts/SettingsContext'
+import { THEMES, getTheme, applyTheme } from './themes/ThemeSystemFixed'
 
 function App() {
   const [showWelcome, setShowWelcome] = useState(false)
@@ -37,6 +39,19 @@ function App() {
     return () => {
       window.removeEventListener('storage', handleStorageChange)
       clearInterval(interval)
+    }
+  }, [])
+
+  // Apply theme based on settings
+  useEffect(() => {
+    const mainCharacter = localStorage.getItem('teyvat-roulette-main-character')
+    if (mainCharacter && mainCharacter !== 'none') {
+      const theme = getTheme(mainCharacter)
+      applyTheme(theme)
+    } else {
+      // Apply default theme
+      const defaultTheme = getTheme('default')
+      applyTheme(defaultTheme)
     }
   }, [])
 

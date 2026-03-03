@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import '../App.css'
 import Wheel from '../components/Wheel'
 import charactersData from '../../data/list.json'
+import { useUserName } from '../hooks/useUserName'
 import { useSettings } from '../contexts/SettingsContext'
 
 function CharacterRoulette() {
@@ -19,6 +20,7 @@ function CharacterRoulette() {
   const [isSpinning, setIsSpinning] = useState(false)
   const [highlightedIndex, setHighlightedIndex] = useState(-1)
   const { settings } = useSettings()
+  const { userName } = useUserName()
 
   const weaponTypes = useMemo(() => [...new Set(characters.map(c => c.weapon_type))].sort(), [characters])
   const elements = useMemo(() => [...new Set(characters.map(c => c.element))].sort(), [characters])
@@ -153,7 +155,11 @@ function CharacterRoulette() {
     <div className="roulette-page">
       <div className="header">
         <h1>🎰 Teyvat Character Roulette</h1>
-        <p>Spin the wheel to randomly select a character!</p>
+        <p>
+          {userName.userName 
+            ? `Spin the wheel to randomly select a character, ${userName.userName}!` 
+            : 'Spin the wheel to randomly select a character!'}
+        </p>
         <button className="toggle-filters-btn" onClick={toggleFilters}>
           {showFilters ? '▼ Hide Filters' : '▶ Show Filters'}
           {activeFiltersCount > 0 && <span className="filter-badge">{activeFiltersCount}</span>}

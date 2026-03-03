@@ -1,0 +1,65 @@
+/* CSS Custom Properties for Theme System */
+
+:root {
+  /* Default theme colors */
+  --theme-primary: #667eea;
+  --theme-secondary: #764ba2;
+  --theme-accent: #5a6fd8;
+  --theme-background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --theme-surface: rgba(255, 255, 255, 0.95);
+  --theme-glass: rgba(255, 255, 255, 0.1);
+  --theme-text: #333333;
+  --theme-success: #4CAF50;
+  --theme-warning: #FF9800;
+
+  /* Default theme gradients */
+  --theme-primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --theme-secondary-gradient: linear-gradient(135deg, #764ba2 0%, #5a6fd8 100%);
+  --theme-background-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+  /* Default theme shadows */
+  --theme-shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.1);
+  --theme-shadow-medium: 0 8px 32px rgba(0, 0, 0, 0.15);
+  --theme-shadow-strong: 0 12px 40px rgba(0, 0, 0, 0.25);
+
+  /* Default theme typography */
+  --theme-font-primary: "Genshin Impact", "Comic Sans MS", "Noto Sans JP";
+  --theme-font-secondary: "Segoe UI", "Roboto", "Helvetica Neue";
+
+  /* Default theme spacing */
+  --theme-spacing-xs: 0.5rem;
+  --theme-spacing-sm: 1rem;
+  --theme-spacing-md: 1.5rem;
+  --theme-spacing-lg: 2rem;
+  --theme-spacing-xl: 3rem;
+
+  /* Default theme border radius */
+  --theme-radius-small: 8px;
+  --theme-radius-medium: 12px;
+  --theme-radius-large: 16px;
+  --theme-radius-xl: 20px;
+
+  /* Default theme animations */
+  --theme-duration-fast: 0.2s;
+  --theme-duration-normal: 0.3s;
+  --theme-duration-slow: 0.5s;
+  --theme-easing-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --theme-easing-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Yoimiya theme */
+[data-theme="yoimiya"] {
+  --theme-primary: #FF6B9A;
+  --theme-secondary: #FFB6D9;
+  --theme-accent: #9B4EFF;
+  --theme-background: linear-gradient(135deg, #FF6B9A 0%, #9B4EFF 100%);
+  --theme-surface: rgba(45, 27, 78, 0.9);
+  --theme-glass: rgba(255, 255, 255, 0.1);
+  --theme-text: #FFFFFF;
+  --theme-success: #4CAF50;
+  --theme-warning: #FF9800;
+
+  --theme-primary-gradient: linear-gradient(135deg, #FF6B9A 0%, #9B4EFF 100%);
+  --theme-secondary-gradient: linear-gradient(135deg, #FFB6D9 0%, #7B3FF4 100%);
+  --theme-background-gradient: linear-gradient(135deg, #FF6B9A 0%, #9B4EFF 100%);
+}

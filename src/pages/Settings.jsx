@@ -1,8 +1,12 @@
 import { useSettings } from '../contexts/SettingsContext'
 import '../App.css'
+import StickerDisplay from '../components/StickerDisplay'
+import { useState } from 'react'
 
 function Settings() {
   const { settings, updateSetting, resetSettings } = useSettings()
+  const [showSticker, setShowSticker] = useState(false)
+  const [currentSticker, setCurrentSticker] = useState('')
 
   const handleWheelAnimationToggle = () => {
     updateSetting('wheelAnimation', !settings.wheelAnimation)
@@ -10,6 +14,13 @@ function Settings() {
 
   const handleNonCompliantToggle = () => {
     updateSetting('showNonCompliantBosses', !settings.showNonCompliantBosses)
+  }
+
+  const handleAddSticker = () => {
+    const stickers = ['yoimiya1.jpg', 'yoimiya2.jpg', 'yoimiya3.webp', 'yoimiya4.avif', 'yoimiya5.jpg']
+    const randomSticker = stickers[Math.floor(Math.random() * stickers.length)]
+    setCurrentSticker(randomSticker)
+    setShowSticker(true)
   }
 
   const handleReset = () => {
@@ -26,6 +37,73 @@ function Settings() {
       </header>
 
       <main className="settings-content">
+        <section className="settings-section">
+          <h2>Main Character Selection</h2>
+          
+          <div className="setting-item">
+            <div className="setting-info">
+              <h3>Main Selection</h3>
+              <p>Choose your primary character theme for the site</p>
+            </div>
+            <div className="setting-control">
+              <label className="toggle-switch">
+                <input
+                  type="radio"
+                  name="mainCharacter"
+                  value="yoimiya"
+                  checked={settings.mainCharacter === 'yoimiya'}
+                  onChange={() => updateSetting('mainCharacter', 'yoimiya')}
+                />
+                <span className="radio-label">Yoimiya</span>
+              </label>
+              <label className="toggle-switch">
+                <input
+                  type="radio"
+                  name="mainCharacter"
+                  value="ayato"
+                  checked={settings.mainCharacter === 'ayato'}
+                  onChange={() => updateSetting('mainCharacter', 'ayato')}
+                />
+                <span className="radio-label">Ayato</span>
+              </label>
+              <label className="toggle-switch">
+                <input
+                  type="radio"
+                  name="mainCharacter"
+                  value="none"
+                  checked={settings.mainCharacter === 'none'}
+                  onChange={() => updateSetting('mainCharacter', 'none')}
+                />
+                <span className="radio-label">Default</span>
+              </label>
+            </div>
+          </div>
+
+          {settings.mainCharacter === 'yoimiya' && (
+            <div className="setting-item">
+              <div className="setting-info">
+                <h3>Yoimiya Stickers</h3>
+                <p>Add decorative Yoimiya stickers to the interface</p>
+              </div>
+              <div className="setting-control">
+                <button 
+                  className="sticker-toggle"
+                  onClick={handleAddSticker}
+                >
+                  🎲 Add Random Sticker
+                </button>
+              </div>
+            </div>
+          )}
+
+          {showSticker && currentSticker && (
+            <StickerDisplay 
+              sticker={currentSticker}
+              onClose={() => setShowSticker(false)}
+            />
+          )}
+        </section>
+
         <section className="settings-section">
           <h2>Boss Wheel Settings</h2>
           

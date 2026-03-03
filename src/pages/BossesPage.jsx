@@ -1,8 +1,9 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import '../App.css'
 import Wheel from '../components/Wheel'
 import bossesData from '../../data/boss.json'
 import { useSettings } from '../contexts/SettingsContext'
+import { useUserName } from '../hooks/useUserName'
 
 const defaultFilters = {
   region: 'all',
@@ -18,6 +19,7 @@ function BossesPage() {
   const [isSpinning, setIsSpinning] = useState(false)
   const [highlightedIndex, setHighlightedIndex] = useState(-1)
   const { settings } = useSettings()
+  const { userName } = useUserName()
 
   const bosses = useMemo(() => [...bossesData].sort((a, b) => a.name.localeCompare(b.name)), [])
   const regions = useMemo(() => ['all', ...Array.from(new Set(bossesData.map(boss => boss.region))).sort()], [])
