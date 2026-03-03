@@ -261,6 +261,12 @@
   gap: 1rem;
 }
 
+.main-character-options {
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
 /* Toggle Switch Styles */
 .toggle-switch {
   position: relative;

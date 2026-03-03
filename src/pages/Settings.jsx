@@ -45,7 +45,7 @@ function Settings() {
               <h3>Main Selection</h3>
               <p>Choose your primary character theme for the site</p>
             </div>
-            <div className="setting-control">
+            <div className="setting-control main-character-options">
               <label className="toggle-switch">
                 <input
                   type="radio"
@@ -54,7 +54,17 @@ function Settings() {
                   checked={settings.mainCharacter === 'yoimiya'}
                   onChange={() => updateSetting('mainCharacter', 'yoimiya')}
                 />
-                <span className="radio-label">Yoimiya</span>
+                <span className="radio-label">Yoimiya 🎆</span>
+              </label>
+              <label className="toggle-switch">
+                <input
+                  type="radio"
+                  name="mainCharacter"
+                  value="flins"
+                  checked={settings.mainCharacter === 'flins'}
+                  onChange={() => updateSetting('mainCharacter', 'flins')}
+                />
+                <span className="radio-label">Flins 🗡</span>
               </label>
               <label className="toggle-switch">
                 <input
@@ -64,7 +74,37 @@ function Settings() {
                   checked={settings.mainCharacter === 'ayato'}
                   onChange={() => updateSetting('mainCharacter', 'ayato')}
                 />
-                <span className="radio-label">Ayato</span>
+                <span className="radio-label">Kamisato Ayato 🌊</span>
+              </label>
+              <label className="toggle-switch">
+                <input
+                  type="radio"
+                  name="mainCharacter"
+                  value="venti"
+                  checked={settings.mainCharacter === 'venti'}
+                  onChange={() => updateSetting('mainCharacter', 'venti')}
+                />
+                <span className="radio-label">Venti 🍃</span>
+              </label>
+              <label className="toggle-switch">
+                <input
+                  type="radio"
+                  name="mainCharacter"
+                  value="furina"
+                  checked={settings.mainCharacter === 'furina'}
+                  onChange={() => updateSetting('mainCharacter', 'furina')}
+                />
+                <span className="radio-label">Furina 🌐</span>
+              </label>
+              <label className="toggle-switch">
+                <input
+                  type="radio"
+                  name="mainCharacter"
+                  value="hutao"
+                  checked={settings.mainCharacter === 'hutao'}
+                  onChange={() => updateSetting('mainCharacter', 'hutao')}
+                />
+                <span className="radio-label">Hu Tao 🔥</span>
               </label>
               <label className="toggle-switch">
                 <input

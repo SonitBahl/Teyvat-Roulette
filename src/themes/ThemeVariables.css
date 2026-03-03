@@ -47,19 +47,4 @@
   --theme-easing-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-/* Yoimiya theme */
-[data-theme="yoimiya"] {
-  --theme-primary: #FF6B9A;
-  --theme-secondary: #FFB6D9;
-  --theme-accent: #9B4EFF;
-  --theme-background: linear-gradient(135deg, #FF6B9A 0%, #9B4EFF 100%);
-  --theme-surface: rgba(45, 27, 78, 0.9);
-  --theme-glass: rgba(255, 255, 255, 0.1);
-  --theme-text: #FFFFFF;
-  --theme-success: #4CAF50;
-  --theme-warning: #FF9800;
-
-  --theme-primary-gradient: linear-gradient(135deg, #FF6B9A 0%, #9B4EFF 100%);
-  --theme-secondary-gradient: linear-gradient(135deg, #FFB6D9 0%, #7B3FF4 100%);
-  --theme-background-gradient: linear-gradient(135deg, #FF6B9A 0%, #9B4EFF 100%);
-}
+/* Additional themes are applied via JS by updating CSS variables on :root. */
